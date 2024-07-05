@@ -13,7 +13,7 @@ template_dir = base_dir / 'docs'
 
 df = pandas.read_csv(csv_file, header=0)
 
-m = folium.Map(location=[35.4823241,-97.7593895], zoom_start=7)
+m = folium.Map(location=[35.4823241,-97.7593895], zoom_start=8)
 
 for city_county, location_name, address, phone, hours, latlon in zip(df['city_county'], df['location_name'], df['address'], df['phone'], df['hours_of_operation'], df['latitude_longitude']):
     latlon = latlon.strip('"')
