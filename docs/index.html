@@ -1,0 +1,1983 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f347406aadab2cfddb699852005417fd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f347406aadab2cfddb699852005417fd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f347406aadab2cfddb699852005417fd = L.map(
+                "map_f347406aadab2cfddb699852005417fd",
+                {
+                    center: [35.4823241, -97.7593895],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8c38b307c509dba8eef593d8f365493f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+            var marker_2bc48a411e270aeb486633dda3026706 = L.marker(
+                [34.7737653, -96.67668189999999],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_d60da4e4598eb96dff8999b4f53c98aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_439050187671a647d7d1586cbe071db4 = $(`<div id="html_439050187671a647d7d1586cbe071db4" style="width: 100.0%; height: 100.0%;"><div><p>Ada Public Library</p><p>124 S. Rennie Ave.</p><p>580-436-8125</p><p>M-F: 9 a.m. - 6 p.m., SAT: 9 a.m. - 1 p.m.</p></div></div>`)[0];
+                popup_d60da4e4598eb96dff8999b4f53c98aa.setContent(html_439050187671a647d7d1586cbe071db4);
+            
+        
+
+        marker_2bc48a411e270aeb486633dda3026706.bindPopup(popup_d60da4e4598eb96dff8999b4f53c98aa)
+        ;
+
+        
+    
+    
+            marker_2bc48a411e270aeb486633dda3026706.bindTooltip(
+                `<div>
+                     Ada Public Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af73a5a549713da1bd10436a4865f8d2 = L.marker(
+                [36.8033848, -98.6681808],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_71fc9e3da60420cfec37cb6d542ea43b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbd64ef22005bbc6d8e5709959ae9c7c = $(`<div id="html_cbd64ef22005bbc6d8e5709959ae9c7c" style="width: 100.0%; height: 100.0%;"><div><p>Alva Public Library</p><p>504 7th St.</p><p>580-327-1833</p><p>M: 9 a.m. - 7 p.m., T-F: 9 a.m. - 5:30 p.m., SAT: 9 a.m. - 12 p.m., SUN: Closed (Weather Permitting)</p></div></div>`)[0];
+                popup_71fc9e3da60420cfec37cb6d542ea43b.setContent(html_cbd64ef22005bbc6d8e5709959ae9c7c);
+            
+        
+
+        marker_af73a5a549713da1bd10436a4865f8d2.bindPopup(popup_71fc9e3da60420cfec37cb6d542ea43b)
+        ;
+
+        
+    
+    
+            marker_af73a5a549713da1bd10436a4865f8d2.bindTooltip(
+                `<div>
+                     Alva Public Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff8f3f6bc53da87fcd2550db23e7d9e0 = L.marker(
+                [36.8033623, -98.64947719999999],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_108b471f726299a2f2241d638d380d55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e5b817beded3a38382bca2453f7882e = $(`<div id="html_3e5b817beded3a38382bca2453f7882e" style="width: 100.0%; height: 100.0%;"><div><p>Alva Senior Center/ Panhandle Nutrition</p><p>625 Barnes Ave.</p><p>580-327-1822</p><p>M-TH: 9 a.m. - 3 p.m. (Weather Permitting)</p></div></div>`)[0];
+                popup_108b471f726299a2f2241d638d380d55.setContent(html_3e5b817beded3a38382bca2453f7882e);
+            
+        
+
+        marker_ff8f3f6bc53da87fcd2550db23e7d9e0.bindPopup(popup_108b471f726299a2f2241d638d380d55)
+        ;
+
+        
+    
+    
+            marker_ff8f3f6bc53da87fcd2550db23e7d9e0.bindTooltip(
+                `<div>
+                     Alva Senior Center/ Panhandle Nutrition
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72694f478b82d64878d4b9e0e71dc332 = L.marker(
+                [34.1782496, -97.1326567],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_7e4b714e35427d022dd8a0e62763064e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48c4f1d7b1843012ec653f4f737b5efb = $(`<div id="html_48c4f1d7b1843012ec653f4f737b5efb" style="width: 100.0%; height: 100.0%;"><div><p>Ardmore Public Library</p><p>320 E. St. NW</p><p>580-223-8290</p><p>M-TH: 9 a.m. - 8 p.m., F-SAT: 9 a.m. - 5 p.m.</p></div></div>`)[0];
+                popup_7e4b714e35427d022dd8a0e62763064e.setContent(html_48c4f1d7b1843012ec653f4f737b5efb);
+            
+        
+
+        marker_72694f478b82d64878d4b9e0e71dc332.bindPopup(popup_7e4b714e35427d022dd8a0e62763064e)
+        ;
+
+        
+    
+    
+            marker_72694f478b82d64878d4b9e0e71dc332.bindTooltip(
+                `<div>
+                     Ardmore Public Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d4f1503d2a957488aeb29d12cf6b869 = L.marker(
+                [34.1703705, -97.1638282],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_c8a2364106ef397a5c66455351efde03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc80b61489fab706a90e9e69a3e3b0f6 = $(`<div id="html_cc80b61489fab706a90e9e69a3e3b0f6" style="width: 100.0%; height: 100.0%;"><div><p>Champion Public Library</p><p>601 Railway Express</p><p>580-223-3164</p><p>M-TH: 8:30 a.m. - 7:30 p.m., F: 8:30 a.m. - 5 p.m., SAT: 10 a.m. - 2 p.m.</p></div></div>`)[0];
+                popup_c8a2364106ef397a5c66455351efde03.setContent(html_cc80b61489fab706a90e9e69a3e3b0f6);
+            
+        
+
+        marker_0d4f1503d2a957488aeb29d12cf6b869.bindPopup(popup_c8a2364106ef397a5c66455351efde03)
+        ;
+
+        
+    
+    
+            marker_0d4f1503d2a957488aeb29d12cf6b869.bindTooltip(
+                `<div>
+                     Champion Public Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d925e94c3ce3e563b1b4ef2e7862887f = L.marker(
+                [35.8340442, -96.3920017],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_0b1da79aaf169071418a15d0ff52cfe7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5671858083211745767d6e439e7fd91 = $(`<div id="html_b5671858083211745767d6e439e7fd91" style="width: 100.0%; height: 100.0%;"><div><p>Bristow Public Library</p><p>111 W. 7th Ave.</p><p>918-367-6562</p><p>M&amp;W: 9 a.m. - 6 p.m., T&amp;TH: 9 a.m. - 7 p.m., F: 9 a.m. - 3 p.m., SAT: 9 a.m. - 1 p.m.</p></div></div>`)[0];
+                popup_0b1da79aaf169071418a15d0ff52cfe7.setContent(html_b5671858083211745767d6e439e7fd91);
+            
+        
+
+        marker_d925e94c3ce3e563b1b4ef2e7862887f.bindPopup(popup_0b1da79aaf169071418a15d0ff52cfe7)
+        ;
+
+        
+    
+    
+            marker_d925e94c3ce3e563b1b4ef2e7862887f.bindTooltip(
+                `<div>
+                     Bristow Public Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c826b98b68eaeebbd58cf9bca7cc471f = L.marker(
+                [35.4707432, -95.5275855],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_5b6345c2fb11b1a2abe3a04698d82352 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_890dec4b7dccf95437649e700eacd192 = $(`<div id="html_890dec4b7dccf95437649e700eacd192" style="width: 100.0%; height: 100.0%;"><div><p>Checotah Public Library</p><p>626 W. Gentry Ave.</p><p>918-473-6715</p><p>M: 8:30 a.m. - 8 p.m., T-F: 8:30 a.m. - 6 p.m., SAT: 9 a.m. - 1:30 p.m.</p></div></div>`)[0];
+                popup_5b6345c2fb11b1a2abe3a04698d82352.setContent(html_890dec4b7dccf95437649e700eacd192);
+            
+        
+
+        marker_c826b98b68eaeebbd58cf9bca7cc471f.bindPopup(popup_5b6345c2fb11b1a2abe3a04698d82352)
+        ;
+
+        
+    
+    
+            marker_c826b98b68eaeebbd58cf9bca7cc471f.bindTooltip(
+                `<div>
+                     Checotah Public Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32a452296b8c34b1ab960c80432cc8c9 = L.marker(
+                [35.4949064, -97.269922],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_fe2010ec790d6b7f480ff0209e6524a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38b550f79ea5345608647316e319afec = $(`<div id="html_38b550f79ea5345608647316e319afec" style="width: 100.0%; height: 100.0%;"><div><p>Choctaw Public Library</p><p>2525 Muzzy St.</p><p>405-390-8418</p><p>M-TH: 9 a.m. - 9 p.m., SAT: 9 a.m. - 4 p.m., SUN: 12 p.m. - 6 p.m.</p></div></div>`)[0];
+                popup_fe2010ec790d6b7f480ff0209e6524a3.setContent(html_38b550f79ea5345608647316e319afec);
+            
+        
+
+        marker_32a452296b8c34b1ab960c80432cc8c9.bindPopup(popup_fe2010ec790d6b7f480ff0209e6524a3)
+        ;
+
+        
+    
+    
+            marker_32a452296b8c34b1ab960c80432cc8c9.bindTooltip(
+                `<div>
+                     Choctaw Public Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e5d81abde1f897f526fd615b22f27a67 = L.marker(
+                [35.4689819, -93.47587],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_2b754b8100e5a4a67b99940fee56820a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea15d4ec7c67df2cf0e4421e9742e7aa = $(`<div id="html_ea15d4ec7c67df2cf0e4421e9742e7aa" style="width: 100.0%; height: 100.0%;"><div><p>Marvin Vincent Center</p><p>1116 W. Oakland St.</p><p>479-754-4100</p><p>M-F: 8 a.m. - 8:30 p.m.</p></div></div>`)[0];
+                popup_2b754b8100e5a4a67b99940fee56820a.setContent(html_ea15d4ec7c67df2cf0e4421e9742e7aa);
+            
+        
+
+        marker_e5d81abde1f897f526fd615b22f27a67.bindPopup(popup_2b754b8100e5a4a67b99940fee56820a)
+        ;
+
+        
+    
+    
+            marker_e5d81abde1f897f526fd615b22f27a67.bindTooltip(
+                `<div>
+                     Marvin Vincent Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd4f14a463fe9b36cb3af3efa03c72ce = L.marker(
+                [34.5058139, -97.12049619999999],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_5fc35578340e55d7ada08f0d64200f75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc31c76d5803b02b9f1d497e6329148e = $(`<div id="html_fc31c76d5803b02b9f1d497e6329148e" style="width: 100.0%; height: 100.0%;"><div><p>Davis Public Library</p><p>209 E. Benton Ave.</p><p>580-369-2468</p><p>M-TH: 11:30 a.m. - 5:30 p.m., F: 11:30 a.m. - 2:30 p.m., SAT: 10 a.m. - 1 p.m.</p></div></div>`)[0];
+                popup_5fc35578340e55d7ada08f0d64200f75.setContent(html_fc31c76d5803b02b9f1d497e6329148e);
+            
+        
+
+        marker_bd4f14a463fe9b36cb3af3efa03c72ce.bindPopup(popup_5fc35578340e55d7ada08f0d64200f75)
+        ;
+
+        
+    
+    
+            marker_bd4f14a463fe9b36cb3af3efa03c72ce.bindTooltip(
+                `<div>
+                     Davis Public Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91543f2af674769814810586c2006822 = L.marker(
+                [33.9945125, -96.3935119],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_aa967dd9ee5a94497c3c9038692744e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15112e0fc9effee47698d0295d183b82 = $(`<div id="html_15112e0fc9effee47698d0295d183b82" style="width: 100.0%; height: 100.0%;"><div><p>Don W. Reynolds Library</p><p>1515 W. Main St.</p><p>580-924-3486</p><p>M-TH: 9 a.m. - 8 p.m., F-SAT: 9 a.m. - 5 p.m.</p></div></div>`)[0];
+                popup_aa967dd9ee5a94497c3c9038692744e5.setContent(html_15112e0fc9effee47698d0295d183b82);
+            
+        
+
+        marker_91543f2af674769814810586c2006822.bindPopup(popup_aa967dd9ee5a94497c3c9038692744e5)
+        ;
+
+        
+    
+    
+            marker_91543f2af674769814810586c2006822.bindTooltip(
+                `<div>
+                     Don W. Reynolds Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69a5a30afe3380dcbbd91f552d81a0fc = L.marker(
+                [34.0052202, -96.4207431],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_926e8126c199ad79513a7a7e5e361e2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41b87503c1ccffaa50adddf9e4c7acfd = $(`<div id="html_41b87503c1ccffaa50adddf9e4c7acfd" style="width: 100.0%; height: 100.0%;"><div><p>The Mission, Marissa Banbewiez</p><p>4310 W. University Blvd</p><p>580-387-0091</p><p>T-TH: 12 p.m. for lunch</p></div></div>`)[0];
+                popup_926e8126c199ad79513a7a7e5e361e2c.setContent(html_41b87503c1ccffaa50adddf9e4c7acfd);
+            
+        
+
+        marker_69a5a30afe3380dcbbd91f552d81a0fc.bindPopup(popup_926e8126c199ad79513a7a7e5e361e2c)
+        ;
+
+        
+    
+    
+            marker_69a5a30afe3380dcbbd91f552d81a0fc.bindTooltip(
+                `<div>
+                     The Mission, Marissa Banbewiez
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d38df2d683515db0b2ee3b8f63330d34 = L.marker(
+                [33.99039, -96.37125449999999],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_2f6a4fd874ceba644f4d1fb82203a266 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1996dbf507b4de6df69050b26933922 = $(`<div id="html_a1996dbf507b4de6df69050b26933922" style="width: 100.0%; height: 100.0%;"><div><p>Grace Baptist Church</p><p>206 E. Main St.</p><p>580-931-4997</p><p>SAT: lunchtime only</p></div></div>`)[0];
+                popup_2f6a4fd874ceba644f4d1fb82203a266.setContent(html_a1996dbf507b4de6df69050b26933922);
+            
+        
+
+        marker_d38df2d683515db0b2ee3b8f63330d34.bindPopup(popup_2f6a4fd874ceba644f4d1fb82203a266)
+        ;
+
+        
+    
+    
+            marker_d38df2d683515db0b2ee3b8f63330d34.bindTooltip(
+                `<div>
+                     Grace Baptist Church
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c9c443c180a712ab4b017655d1749690 = L.marker(
+                [35.6219456, -97.48548350000002],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_04ab7e63229853af302b1b1e6960856f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5242aef6e1dbe18fa8a68a42deee7c24 = $(`<div id="html_5242aef6e1dbe18fa8a68a42deee7c24" style="width: 100.0%; height: 100.0%;"><div><p>Edmond Center</p><p>3413 Wynn Dr.</p><p>405-471-6967</p><p>M-F: 7:30 a.m. - 5:30 p.m.</p></div></div>`)[0];
+                popup_04ab7e63229853af302b1b1e6960856f.setContent(html_5242aef6e1dbe18fa8a68a42deee7c24);
+            
+        
+
+        marker_c9c443c180a712ab4b017655d1749690.bindPopup(popup_04ab7e63229853af302b1b1e6960856f)
+        ;
+
+        
+    
+    
+            marker_c9c443c180a712ab4b017655d1749690.bindTooltip(
+                `<div>
+                     Edmond Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd1d20f847850aae21d0693ccb005aec = L.marker(
+                [36.4020269, -97.88028109999999],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_77628b07ff21c2be1a38e8f714accf88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db81839f3cc50b094b9393714bfbc30a = $(`<div id="html_db81839f3cc50b094b9393714bfbc30a" style="width: 100.0%; height: 100.0%;"><div><p>The Salvation Army</p><p>518 N. Independence St.</p><p>580-237-1910</p><p>Open as cool zone when temps exceed 97</p></div></div>`)[0];
+                popup_77628b07ff21c2be1a38e8f714accf88.setContent(html_db81839f3cc50b094b9393714bfbc30a);
+            
+        
+
+        marker_cd1d20f847850aae21d0693ccb005aec.bindPopup(popup_77628b07ff21c2be1a38e8f714accf88)
+        ;
+
+        
+    
+    
+            marker_cd1d20f847850aae21d0693ccb005aec.bindTooltip(
+                `<div>
+                     The Salvation Army
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba1b418488595709fbdc5c527a60fd6a = L.marker(
+                [36.396247, -97.8803088],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_88d18d83becc99e04d2907015fa76966 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_323782ab072e54ad92ef26c82c1cf41e = $(`<div id="html_323782ab072e54ad92ef26c82c1cf41e" style="width: 100.0%; height: 100.0%;"><div><p>CDSA</p><p>114 S. Independence Ave.</p><p>580-242-6131</p><p>M-F: 8 a.m. - 5 p.m. (Weather Permitting)</p></div></div>`)[0];
+                popup_88d18d83becc99e04d2907015fa76966.setContent(html_323782ab072e54ad92ef26c82c1cf41e);
+            
+        
+
+        marker_ba1b418488595709fbdc5c527a60fd6a.bindPopup(popup_88d18d83becc99e04d2907015fa76966)
+        ;
+
+        
+    
+    
+            marker_ba1b418488595709fbdc5c527a60fd6a.bindTooltip(
+                `<div>
+                     CDSA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f93c1216aa4164e28ec2f57297f0ee8 = L.marker(
+                [35.2841665, -95.5835946],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_997e10b2e12fefa63e92162e03ac9b08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dfc9273f9f2bc22b3a9f57bdc27bce61 = $(`<div id="html_dfc9273f9f2bc22b3a9f57bdc27bce61" style="width: 100.0%; height: 100.0%;"><div><p>Eufaula Memorial Library</p><p>301 S. 1st St.</p><p>918-689-2291</p><p>M-TH: 8:30 a.m - 7 p.m., F: 8:30 a.m. - 5 p.m., SAT: 8:30 a.m. - 12 p.m.</p></div></div>`)[0];
+                popup_997e10b2e12fefa63e92162e03ac9b08.setContent(html_dfc9273f9f2bc22b3a9f57bdc27bce61);
+            
+        
+
+        marker_8f93c1216aa4164e28ec2f57297f0ee8.bindPopup(popup_997e10b2e12fefa63e92162e03ac9b08)
+        ;
+
+        
+    
+    
+            marker_8f93c1216aa4164e28ec2f57297f0ee8.bindTooltip(
+                `<div>
+                     Eufaula Memorial Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7a34603e4d278e3b200c5985f7b4ed7 = L.marker(
+                [35.7925724, -95.2463665],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_9e48f686f67595f2ad71885c0b5d9cd5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77d8a6d9c62fe71260d0420754a900ab = $(`<div id="html_77d8a6d9c62fe71260d0420754a900ab" style="width: 100.0%; height: 100.0%;"><div><p>Q.B. Boydstun Public Library</p><p>201 E. South Ave.</p><p>918-478-3587</p><p>M-F: 9 a.m. - 6 p.m., SAT: 9 a.m. - 1 p.m.</p></div></div>`)[0];
+                popup_9e48f686f67595f2ad71885c0b5d9cd5.setContent(html_77d8a6d9c62fe71260d0420754a900ab);
+            
+        
+
+        marker_d7a34603e4d278e3b200c5985f7b4ed7.bindPopup(popup_9e48f686f67595f2ad71885c0b5d9cd5)
+        ;
+
+        
+    
+    
+            marker_d7a34603e4d278e3b200c5985f7b4ed7.bindTooltip(
+                `<div>
+                     Q.B. Boydstun Public Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c404bdaf7097352f3a9a82229a8a570 = L.marker(
+                [35.3899825, -94.4230692],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_f10d7a802ef2b64e24c54aa0416eeb65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c8ddf43c4280b996988ea9b2e0bda01 = $(`<div id="html_3c8ddf43c4280b996988ea9b2e0bda01" style="width: 100.0%; height: 100.0%;"><div><p>Salvation Army</p><p>301 N. 6th St</p><p>479-783-2340</p><p>SUN-SAT: 9 a.m. - 4 p.m.; Heat index must exceed 105 and not dip below 75 at night</p></div></div>`)[0];
+                popup_f10d7a802ef2b64e24c54aa0416eeb65.setContent(html_3c8ddf43c4280b996988ea9b2e0bda01);
+            
+        
+
+        marker_1c404bdaf7097352f3a9a82229a8a570.bindPopup(popup_f10d7a802ef2b64e24c54aa0416eeb65)
+        ;
+
+        
+    
+    
+            marker_1c404bdaf7097352f3a9a82229a8a570.bindTooltip(
+                `<div>
+                     Salvation Army
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_635a9ecf188394fa8f485ee49d39e334 = L.marker(
+                [35.3843722, -94.42096459999999],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_3afb1e71fa0369379702bfa612f06d1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b003db721d1e32eeb22b222521ff7de4 = $(`<div id="html_b003db721d1e32eeb22b222521ff7de4" style="width: 100.0%; height: 100.0%;"><div><p>Hope Campus</p><p>301 S. E St.</p><p>479-668-4764</p><p>7 Days/Week: 8 a.m. - 8 p.m; open when temp exceeds 95</p></div></div>`)[0];
+                popup_3afb1e71fa0369379702bfa612f06d1b.setContent(html_b003db721d1e32eeb22b222521ff7de4);
+            
+        
+
+        marker_635a9ecf188394fa8f485ee49d39e334.bindPopup(popup_3afb1e71fa0369379702bfa612f06d1b)
+        ;
+
+        
+    
+    
+            marker_635a9ecf188394fa8f485ee49d39e334.bindTooltip(
+                `<div>
+                     Hope Campus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_118f75800a57d1ec14fce5c9ad1926e4 = L.marker(
+                [35.38884669999999, -94.4239884],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_e3bb601c29679779e43f69500b52c084 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbce602b575cd8cb85154676951615a7 = $(`<div id="html_bbce602b575cd8cb85154676951615a7" style="width: 100.0%; height: 100.0%;"><div><p>Next Step</p><p>123 N. 6th St. (STE 200)</p><p>479-782-5433</p><p>M-F: 8 a.m. - 3 p.m.</p></div></div>`)[0];
+                popup_e3bb601c29679779e43f69500b52c084.setContent(html_bbce602b575cd8cb85154676951615a7);
+            
+        
+
+        marker_118f75800a57d1ec14fce5c9ad1926e4.bindPopup(popup_e3bb601c29679779e43f69500b52c084)
+        ;
+
+        
+    
+    
+            marker_118f75800a57d1ec14fce5c9ad1926e4.bindTooltip(
+                `<div>
+                     Next Step
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6219943e223ca9e4d356a63beb01738 = L.marker(
+                [35.87834369999999, -97.4246581],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_c4ebfacaf39b03eb351d3248132b3bee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c03ed98ba42d1b34b0d41e92121d9ea = $(`<div id="html_2c03ed98ba42d1b34b0d41e92121d9ea" style="width: 100.0%; height: 100.0%;"><div><p>Guthrie YMCA</p><p>114 E. Oklahoma Ave.</p><p>405-282-8206</p><p>M-TH: 5 a.m. - 8:30 p.m., F: 5:30 a.m. - 7 p.m., SAT: 8:30 a.m. - 3 p.m., SUN: 2 p.m. - 4 p.m.</p></div></div>`)[0];
+                popup_c4ebfacaf39b03eb351d3248132b3bee.setContent(html_2c03ed98ba42d1b34b0d41e92121d9ea);
+            
+        
+
+        marker_d6219943e223ca9e4d356a63beb01738.bindPopup(popup_c4ebfacaf39b03eb351d3248132b3bee)
+        ;
+
+        
+    
+    
+            marker_d6219943e223ca9e4d356a63beb01738.bindTooltip(
+                `<div>
+                     Guthrie YMCA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ebf91e75d26c9566b15b1da9b66fe1a = L.marker(
+                [35.4878878, -97.1615853],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_f0e5e8fba8e9a0721d220d6790871c06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa9d75da31142557c93f3e7cf59f1a8f = $(`<div id="html_aa9d75da31142557c93f3e7cf59f1a8f" style="width: 100.0%; height: 100.0%;"><div><p>Harrah Public Library</p><p>1930 Church Ave.</p><p>405-454-2001</p><p>MWF: 9 a.m. - 6 p.m., T: 9 a.m. - 8 p.m., SAT: 9 a.m. - 5 p.m.</p></div></div>`)[0];
+                popup_f0e5e8fba8e9a0721d220d6790871c06.setContent(html_aa9d75da31142557c93f3e7cf59f1a8f);
+            
+        
+
+        marker_5ebf91e75d26c9566b15b1da9b66fe1a.bindPopup(popup_f0e5e8fba8e9a0721d220d6790871c06)
+        ;
+
+        
+    
+    
+            marker_5ebf91e75d26c9566b15b1da9b66fe1a.bindTooltip(
+                `<div>
+                     Harrah Public Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d564d34046a99b04e9a929c64be826cd = L.marker(
+                [34.2280319, -97.48763269999999],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_167a38a8c5a6c8965e7a9aa438875206 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4919083cae5a381128c80443dfcbdc36 = $(`<div id="html_4919083cae5a381128c80443dfcbdc36" style="width: 100.0%; height: 100.0%;"><div><p>Healdton Community Library</p><p>554 S. 4th St.</p><p>580-229-0654</p><p>M-TH: 11:30 a.m. - 5:30 p.m., F: 11:30 a.m. - 2:30 p.m., SAT: 10 a.m. - 1 p.m.</p></div></div>`)[0];
+                popup_167a38a8c5a6c8965e7a9aa438875206.setContent(html_4919083cae5a381128c80443dfcbdc36);
+            
+        
+
+        marker_d564d34046a99b04e9a929c64be826cd.bindPopup(popup_167a38a8c5a6c8965e7a9aa438875206)
+        ;
+
+        
+    
+    
+            marker_d564d34046a99b04e9a929c64be826cd.bindTooltip(
+                `<div>
+                     Healdton Community Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b0308eccca0cc370bbe74f019335604 = L.marker(
+                [35.0834453, -96.3977122],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_fc931bf3a3b5f8277f0cbe7e8654a769 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a2e54c917da7f033d50b4ca85d53cca = $(`<div id="html_1a2e54c917da7f033d50b4ca85d53cca" style="width: 100.0%; height: 100.0%;"><div><p>Grace M. Pickens Public Library</p><p>209 E. 9th St.</p><p>405-379-3245</p><p>M-F: 8 a.m. - 5:30 p.m., SAT: 10 a.m. - 1 p.m.</p></div></div>`)[0];
+                popup_fc931bf3a3b5f8277f0cbe7e8654a769.setContent(html_1a2e54c917da7f033d50b4ca85d53cca);
+            
+        
+
+        marker_7b0308eccca0cc370bbe74f019335604.bindPopup(popup_fc931bf3a3b5f8277f0cbe7e8654a769)
+        ;
+
+        
+    
+    
+            marker_7b0308eccca0cc370bbe74f019335604.bindTooltip(
+                `<div>
+                     Grace M. Pickens Public Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_910ba70fffd9235e5d770ea303a41867 = L.marker(
+                [35.5654887, -97.3026879],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_7565751b30d325458b80b0839b30b4f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68566bb54351d21bbae0d8a002a4477a = $(`<div id="html_68566bb54351d21bbae0d8a002a4477a" style="width: 100.0%; height: 100.0%;"><div><p>Jones Public Library</p><p>9295 Willa Way</p><p>405-399-5471</p><p>MWF: 9 a.m. - 6 p.m., T: 9 a.m. - 8 p.m., SAT: 9 a.m. - 5 p.m.</p></div></div>`)[0];
+                popup_7565751b30d325458b80b0839b30b4f0.setContent(html_68566bb54351d21bbae0d8a002a4477a);
+            
+        
+
+        marker_910ba70fffd9235e5d770ea303a41867.bindPopup(popup_7565751b30d325458b80b0839b30b4f0)
+        ;
+
+        
+    
+    
+            marker_910ba70fffd9235e5d770ea303a41867.bindTooltip(
+                `<div>
+                     Jones Public Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d84b1fd1a55687a011a01592ab721db = L.marker(
+                [34.0925899, -96.77522809999999],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_1898dcf514a337e2b6f9725e641db9f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca3137ae1ea79ccf5c4794f223c8546f = $(`<div id="html_ca3137ae1ea79ccf5c4794f223c8546f" style="width: 100.0%; height: 100.0%;"><div><p>Madill City Library</p><p>500 W. Overton St.</p><p>580-795-2749</p><p>M-F: 9:30 a.m. - 6:30 p.m., SAT: 9 a.m. - 1:30 p.m.</p></div></div>`)[0];
+                popup_1898dcf514a337e2b6f9725e641db9f4.setContent(html_ca3137ae1ea79ccf5c4794f223c8546f);
+            
+        
+
+        marker_1d84b1fd1a55687a011a01592ab721db.bindPopup(popup_1898dcf514a337e2b6f9725e641db9f4)
+        ;
+
+        
+    
+    
+            marker_1d84b1fd1a55687a011a01592ab721db.bindTooltip(
+                `<div>
+                     Madill City Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6def402826acf22cb409ff314d81726 = L.marker(
+                [34.2540917, -83.56304569999999],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_a094f7a225bbaded9bfdb584dea8c094 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a61c3855f0c9e713fb0df65b60fd4f45 = $(`<div id="html_a61c3855f0c9e713fb0df65b60fd4f45" style="width: 100.0%; height: 100.0%;"><div><p>506 Williams St.</p><p>405-867-4748</p><p>M-TH: 8 a.m. - 5:30 p.m.</p><p>nan</p></div></div>`)[0];
+                popup_a094f7a225bbaded9bfdb584dea8c094.setContent(html_a61c3855f0c9e713fb0df65b60fd4f45);
+            
+        
+
+        marker_b6def402826acf22cb409ff314d81726.bindPopup(popup_a094f7a225bbaded9bfdb584dea8c094)
+        ;
+
+        
+    
+    
+            marker_b6def402826acf22cb409ff314d81726.bindTooltip(
+                `<div>
+                     506 Williams St.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0872ae74b4dd5e10de0320c0690bf184 = L.marker(
+                [35.7477983, -95.36375629999999],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_dcf6cc752806d0f843e325155224c2f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d970e2aebb0426b97fff85df7ac31f7 = $(`<div id="html_9d970e2aebb0426b97fff85df7ac31f7" style="width: 100.0%; height: 100.0%;"><div><p>Gospel Rescue Mission</p><p>323 Callahan St.</p><p>918-682-3489</p><p>7 Days/Week: 8:30 a.m. - 5:00 p.m.</p></div></div>`)[0];
+                popup_dcf6cc752806d0f843e325155224c2f3.setContent(html_9d970e2aebb0426b97fff85df7ac31f7);
+            
+        
+
+        marker_0872ae74b4dd5e10de0320c0690bf184.bindPopup(popup_dcf6cc752806d0f843e325155224c2f3)
+        ;
+
+        
+    
+    
+            marker_0872ae74b4dd5e10de0320c0690bf184.bindTooltip(
+                `<div>
+                     Gospel Rescue Mission
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72c98dc99a19d67be402423effcc1c54 = L.marker(
+                [35.7495421, -95.37048270000001],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_f765e2c5f8edaff3f5124a7492c594cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aef6e6e727a4b154e787108db259b9ac = $(`<div id="html_aef6e6e727a4b154e787108db259b9ac" style="width: 100.0%; height: 100.0%;"><div><p>Lake Area United Way</p><p>230 W. Broadway St. (STE 200)</p><p>918-682-1364</p><p>M-F: 8 a.m. - 5 p.m. (Referral agency only)</p></div></div>`)[0];
+                popup_f765e2c5f8edaff3f5124a7492c594cc.setContent(html_aef6e6e727a4b154e787108db259b9ac);
+            
+        
+
+        marker_72c98dc99a19d67be402423effcc1c54.bindPopup(popup_f765e2c5f8edaff3f5124a7492c594cc)
+        ;
+
+        
+    
+    
+            marker_72c98dc99a19d67be402423effcc1c54.bindTooltip(
+                `<div>
+                     Lake Area United Way
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c47680ffda1fc8d6afb00394e908f686 = L.marker(
+                [35.751736, -95.36742180000002],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_3f92e99818221aba7384a918558dcca2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9777d386eafe5c451184535c502b7fc6 = $(`<div id="html_9777d386eafe5c451184535c502b7fc6" style="width: 100.0%; height: 100.0%;"><div><p>Arrowhead Mall</p><p>501 N. Main St.</p><p>918-683-4100</p><p>M-F: 10 a.m. - 7 p.m., SUN: 12 p.m. - 6 p.m.</p></div></div>`)[0];
+                popup_3f92e99818221aba7384a918558dcca2.setContent(html_9777d386eafe5c451184535c502b7fc6);
+            
+        
+
+        marker_c47680ffda1fc8d6afb00394e908f686.bindPopup(popup_3f92e99818221aba7384a918558dcca2)
+        ;
+
+        
+    
+    
+            marker_c47680ffda1fc8d6afb00394e908f686.bindTooltip(
+                `<div>
+                     Arrowhead Mall
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3bd212ff2a10a5edab554a73e25fd8c = L.marker(
+                [35.4918101, -97.3248634],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_30dfa2ba2354032d55e49551f4631dab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4698643c8a537bb39679e6497c18b2e = $(`<div id="html_a4698643c8a537bb39679e6497c18b2e" style="width: 100.0%; height: 100.0%;"><div><p>Nicoma Park Library</p><p>2240 Overholser Dr.</p><p>405-769-9452</p><p>T-TH: 9:30 a.m - 5:30 p.m., F: 9 a.m. - 6 p.m., SAT: 9 a.m. - 5 p.m.</p></div></div>`)[0];
+                popup_30dfa2ba2354032d55e49551f4631dab.setContent(html_a4698643c8a537bb39679e6497c18b2e);
+            
+        
+
+        marker_a3bd212ff2a10a5edab554a73e25fd8c.bindPopup(popup_30dfa2ba2354032d55e49551f4631dab)
+        ;
+
+        
+    
+    
+            marker_a3bd212ff2a10a5edab554a73e25fd8c.bindTooltip(
+                `<div>
+                     Nicoma Park Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5162e7608e4663f0a82f4e81bf475503 = L.marker(
+                [35.2239004, -97.4284919],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_4386da46968453d713538253e7ad7273 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97ff6073fb42de76f0e3b828c865c8da = $(`<div id="html_97ff6073fb42de76f0e3b828c865c8da" style="width: 100.0%; height: 100.0%;"><div><p>Food and Shelter</p><p>201 Reed Ave.</p><p>405-360-4954</p><p>7 Days/Week: 8 a.m. - 4 p.m.</p></div></div>`)[0];
+                popup_4386da46968453d713538253e7ad7273.setContent(html_97ff6073fb42de76f0e3b828c865c8da);
+            
+        
+
+        marker_5162e7608e4663f0a82f4e81bf475503.bindPopup(popup_4386da46968453d713538253e7ad7273)
+        ;
+
+        
+    
+    
+            marker_5162e7608e4663f0a82f4e81bf475503.bindTooltip(
+                `<div>
+                     Food and Shelter
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d3311c45ed1fff3271470ce4103d2da = L.marker(
+                [35.468462, -97.518675],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_eac2707e3ff180a0c99ef9c551f0bcd1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c32012cda081ecd4d7a893cff351b6a = $(`<div id="html_5c32012cda081ecd4d7a893cff351b6a" style="width: 100.0%; height: 100.0%;"><div><p>Ronald J. Norick Downtown Library</p><p>300 Park Ave.</p><p>405-231-8650</p><p>M-TH: 9 a.m. - 9 p.m., F: 9 a.m. - 6 p.m., SAT: 9 a.m. - 5 p.m., SUN: 1 p.m. - 6 p.m.</p></div></div>`)[0];
+                popup_eac2707e3ff180a0c99ef9c551f0bcd1.setContent(html_5c32012cda081ecd4d7a893cff351b6a);
+            
+        
+
+        marker_7d3311c45ed1fff3271470ce4103d2da.bindPopup(popup_eac2707e3ff180a0c99ef9c551f0bcd1)
+        ;
+
+        
+    
+    
+            marker_7d3311c45ed1fff3271470ce4103d2da.bindTooltip(
+                `<div>
+                     Ronald J. Norick Downtown Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_975b33d66ab90d5c11717feba814a415 = L.marker(
+                [35.4722993, -97.5127741],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_517c99ef177799f2bb799e78c1b1a960 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96e1b11ac000c32aed84bb80cebf4dd1 = $(`<div id="html_96e1b11ac000c32aed84bb80cebf4dd1" style="width: 100.0%; height: 100.0%;"><div><p>Edward L. Gaylord Downtown YMCA</p><p>1 NW 4th St.</p><p>405-297-7700</p><p>M-F: 5 a.m. - 9 p.m., SAT: 7 a.m. - 5 p.m., SUN: 1 p.m. - 5 p.m.</p></div></div>`)[0];
+                popup_517c99ef177799f2bb799e78c1b1a960.setContent(html_96e1b11ac000c32aed84bb80cebf4dd1);
+            
+        
+
+        marker_975b33d66ab90d5c11717feba814a415.bindPopup(popup_517c99ef177799f2bb799e78c1b1a960)
+        ;
+
+        
+    
+    
+            marker_975b33d66ab90d5c11717feba814a415.bindTooltip(
+                `<div>
+                     Edward L. Gaylord Downtown YMCA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_793e586c2e76ce31fc43b5628ecc46d8 = L.marker(
+                [35.5269334, -97.5743992],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_fd86554e6b0cae444416bd57d6c39aad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_681198a187c6294110505c8ce00d667f = $(`<div id="html_681198a187c6294110505c8ce00d667f" style="width: 100.0%; height: 100.0%;"><div><p>YMCA Health Living Center</p><p>5520 N. Independence Ave.</p><p>405-297-7717</p><p>M-F: 5:30 a.m. - 9 p.m., SAT: 7 a.m. - 5:30 p.m., SUN: 1 p.m. - 5:30 p.m.</p></div></div>`)[0];
+                popup_fd86554e6b0cae444416bd57d6c39aad.setContent(html_681198a187c6294110505c8ce00d667f);
+            
+        
+
+        marker_793e586c2e76ce31fc43b5628ecc46d8.bindPopup(popup_fd86554e6b0cae444416bd57d6c39aad)
+        ;
+
+        
+    
+    
+            marker_793e586c2e76ce31fc43b5628ecc46d8.bindTooltip(
+                `<div>
+                     YMCA Health Living Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a53892c8a14c591ba85f3442b8dc8e25 = L.marker(
+                [35.4530912, -97.5518172],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_bba4eb6d0f2d9bcc62818ebe086f173e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7610087e1fc44dd867bb6fa5ceede8b3 = $(`<div id="html_7610087e1fc44dd867bb6fa5ceede8b3" style="width: 100.0%; height: 100.0%;"><div><p>Wright Library</p><p>2101 Exchange Ave.</p><p>405-235-5035</p><p>T-TH: 9:30 a.m. - 5:30 p.m., F-SAT: 9 a.m. - 5 p.m.</p></div></div>`)[0];
+                popup_bba4eb6d0f2d9bcc62818ebe086f173e.setContent(html_7610087e1fc44dd867bb6fa5ceede8b3);
+            
+        
+
+        marker_a53892c8a14c591ba85f3442b8dc8e25.bindPopup(popup_bba4eb6d0f2d9bcc62818ebe086f173e)
+        ;
+
+        
+    
+    
+            marker_a53892c8a14c591ba85f3442b8dc8e25.bindTooltip(
+                `<div>
+                     Wright Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aec2e1b489f4dff6824a3c1a8defe3ab = L.marker(
+                [35.5744847, -97.5502932],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_fd181c3741eba0f6d458f8a8b049bec4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f8f4a3db8b2df669aafc5666496792c = $(`<div id="html_8f8f4a3db8b2df669aafc5666496792c" style="width: 100.0%; height: 100.0%;"><div><p>Crossings Community Center and Clinic</p><p>10255 N. Pennsylvania Ave.</p><p>405-749-0800</p><p>M-F: 9 a.m. - 5 p.m.</p></div></div>`)[0];
+                popup_fd181c3741eba0f6d458f8a8b049bec4.setContent(html_8f8f4a3db8b2df669aafc5666496792c);
+            
+        
+
+        marker_aec2e1b489f4dff6824a3c1a8defe3ab.bindPopup(popup_fd181c3741eba0f6d458f8a8b049bec4)
+        ;
+
+        
+    
+    
+            marker_aec2e1b489f4dff6824a3c1a8defe3ab.bindTooltip(
+                `<div>
+                     Crossings Community Center and Clinic
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd71d19459306842cbd11b018738d03f = L.marker(
+                [35.52536449999999, -97.5565149],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_4411f0a4cb4ddb7c10dd58e38aa49293 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4315d83e3e8cc7094532dfb18b55a146 = $(`<div id="html_4315d83e3e8cc7094532dfb18b55a146" style="width: 100.0%; height: 100.0%;"><div><p>Belle Isle Library</p><p>5500 N. Villa Ave.</p><p>405-606-3580</p><p>M-TH: 9 a.m. - 9 p.m., F: 9 a.m. - 6 p.m., SAT: 9 a.m - 5 p.m., SUN: 1 p.m. - 6 p.m.</p></div></div>`)[0];
+                popup_4411f0a4cb4ddb7c10dd58e38aa49293.setContent(html_4315d83e3e8cc7094532dfb18b55a146);
+            
+        
+
+        marker_fd71d19459306842cbd11b018738d03f.bindPopup(popup_4411f0a4cb4ddb7c10dd58e38aa49293)
+        ;
+
+        
+    
+    
+            marker_fd71d19459306842cbd11b018738d03f.bindTooltip(
+                `<div>
+                     Belle Isle Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78836d533f95153ce4219bbd17b40a74 = L.marker(
+                [35.5940833, -97.6180072],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_02bfdf91623d36fc13096b73429bb8c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b3d456b6ae4352cc579523b9e42b09b = $(`<div id="html_5b3d456b6ae4352cc579523b9e42b09b" style="width: 100.0%; height: 100.0%;"><div><p>Northwest OKC Library</p><p>5600 NW 122nd St.</p><p>405-606-3580</p><p>M-TH: 9 a.m. - 9 p.m., F: 9 a.m. - 6 p.m., SAT: 9 a.m. - 5 p.m., SUN: 1 p.m. - 6 p.m.</p></div></div>`)[0];
+                popup_02bfdf91623d36fc13096b73429bb8c7.setContent(html_5b3d456b6ae4352cc579523b9e42b09b);
+            
+        
+
+        marker_78836d533f95153ce4219bbd17b40a74.bindPopup(popup_02bfdf91623d36fc13096b73429bb8c7)
+        ;
+
+        
+    
+    
+            marker_78836d533f95153ce4219bbd17b40a74.bindTooltip(
+                `<div>
+                     Northwest OKC Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02b2eeb1ae6b43c4f8af42ce07a7d9ea = L.marker(
+                [35.47163620000001, -97.5448151],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_6076cc6146e45539e7e8cf07b9b8a540 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_046211cda780903e4cf6382c5f02d9ae = $(`<div id="html_046211cda780903e4cf6382c5f02d9ae" style="width: 100.0%; height: 100.0%;"><div><p>Homeless Alliance Day Shelter</p><p>1724 NW 4th St.</p><p>405-415-8410</p><p>M-F: 8 a.m. - 5 p.m.</p></div></div>`)[0];
+                popup_6076cc6146e45539e7e8cf07b9b8a540.setContent(html_046211cda780903e4cf6382c5f02d9ae);
+            
+        
+
+        marker_02b2eeb1ae6b43c4f8af42ce07a7d9ea.bindPopup(popup_6076cc6146e45539e7e8cf07b9b8a540)
+        ;
+
+        
+    
+    
+            marker_02b2eeb1ae6b43c4f8af42ce07a7d9ea.bindTooltip(
+                `<div>
+                     Homeless Alliance Day Shelter
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07c3a72e466888a172abea0885d58f71 = L.marker(
+                [35.4382294, -97.5196649],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_b3108695cd5e3148d4d7193bfdbd0a42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a960deed90c225a0a3f9c3f89b25beb7 = $(`<div id="html_a960deed90c225a0a3f9c3f89b25beb7" style="width: 100.0%; height: 100.0%;"><div><p>Capitol Hill Library</p><p>327 SW 27th St.</p><p>405-634-6308</p><p>M-TH: 9 a.m. - 9 p.m., F: 9 a.m. - 6 p.m., SAT: 9 a.m. - 5 p.m., SUN: 1 p.m. - 6 p.m.</p></div></div>`)[0];
+                popup_b3108695cd5e3148d4d7193bfdbd0a42.setContent(html_a960deed90c225a0a3f9c3f89b25beb7);
+            
+        
+
+        marker_07c3a72e466888a172abea0885d58f71.bindPopup(popup_b3108695cd5e3148d4d7193bfdbd0a42)
+        ;
+
+        
+    
+    
+            marker_07c3a72e466888a172abea0885d58f71.bindTooltip(
+                `<div>
+                     Capitol Hill Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78bf71e0f3be2e527f360f95080d3582 = L.marker(
+                [35.4776588, -97.5488621],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_42bf9ec3931e6f04ee7e7db6580b5a52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0cc12434dc54e563aa65e6e2702ea3c9 = $(`<div id="html_0cc12434dc54e563aa65e6e2702ea3c9" style="width: 100.0%; height: 100.0%;"><div><p>Red Shield Dining Room</p><p>1001 N. Pennsylvania Ave.</p><p>405-246-1082</p><p>7 Days/Week: 11 a.m. - 3 p.m.</p></div></div>`)[0];
+                popup_42bf9ec3931e6f04ee7e7db6580b5a52.setContent(html_0cc12434dc54e563aa65e6e2702ea3c9);
+            
+        
+
+        marker_78bf71e0f3be2e527f360f95080d3582.bindPopup(popup_42bf9ec3931e6f04ee7e7db6580b5a52)
+        ;
+
+        
+    
+    
+            marker_78bf71e0f3be2e527f360f95080d3582.bindTooltip(
+                `<div>
+                     Red Shield Dining Room
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76f72db518bc43ec42573c3b93885ff0 = L.marker(
+                [35.5372606, -97.62160879999999],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_6f45acc8ab332ec0f449dbe60198cc97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_333ee65b61bb5c8cea3f171dd4311ed3 = $(`<div id="html_333ee65b61bb5c8cea3f171dd4311ed3" style="width: 100.0%; height: 100.0%;"><div><p>Warr Acres Library</p><p>5901 NW 63rd St.</p><p>405-606 -3521</p><p>M-TH: 9 a.m. - 9 p.m., F: 9 a.m. - 6 p.m., SAT: 9 a.m. - 5 p.m., SUN: 1 p.m. - 6 p.m.</p></div></div>`)[0];
+                popup_6f45acc8ab332ec0f449dbe60198cc97.setContent(html_333ee65b61bb5c8cea3f171dd4311ed3);
+            
+        
+
+        marker_76f72db518bc43ec42573c3b93885ff0.bindPopup(popup_6f45acc8ab332ec0f449dbe60198cc97)
+        ;
+
+        
+    
+    
+            marker_76f72db518bc43ec42573c3b93885ff0.bindTooltip(
+                `<div>
+                     Warr Acres Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_37809e3bc8669b6a87ba61f92f67922e = L.marker(
+                [35.5545776, -97.6427667],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_c98a8a8ac32bd6fd9f7e0c0ce02ef678 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_affe23514e35d860a2e15827a0eedfc6 = $(`<div id="html_affe23514e35d860a2e15827a0eedfc6" style="width: 100.0%; height: 100.0%;"><div><p>Rockwell Plaza YMCA</p><p>8300 Glade Ave.</p><p>405-621 -5858</p><p>M-TH: 5 a.m. - 9 p.m., F: 5 a.m. - 8 p.m., SAT: 7 a.m. - 5 p.m., SUN: 1 p.m. - 5 p.m.</p></div></div>`)[0];
+                popup_c98a8a8ac32bd6fd9f7e0c0ce02ef678.setContent(html_affe23514e35d860a2e15827a0eedfc6);
+            
+        
+
+        marker_37809e3bc8669b6a87ba61f92f67922e.bindPopup(popup_c98a8a8ac32bd6fd9f7e0c0ce02ef678)
+        ;
+
+        
+    
+    
+            marker_37809e3bc8669b6a87ba61f92f67922e.bindTooltip(
+                `<div>
+                     Rockwell Plaza YMCA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d8f818043f2d0711115932cb34520ac = L.marker(
+                [35.3972702, -97.52074759999999],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_a736d6e46d52a973264b26f5cf50d84c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fc239f092853dbab4cf7a61f42ef681 = $(`<div id="html_8fc239f092853dbab4cf7a61f42ef681" style="width: 100.0%; height: 100.0%;"><div><p>Southern Oaks Library</p><p>6900 S. Walker Ave.</p><p>405-631 -4468</p><p>M-TH: 9 a.m. - 9 p.m., F: 9 a.m. - 6 p.m., SAT: 9 a.m. - 5 p.m., SUN: 12 p.m. - 6 p.m.</p></div></div>`)[0];
+                popup_a736d6e46d52a973264b26f5cf50d84c.setContent(html_8fc239f092853dbab4cf7a61f42ef681);
+            
+        
+
+        marker_1d8f818043f2d0711115932cb34520ac.bindPopup(popup_a736d6e46d52a973264b26f5cf50d84c)
+        ;
+
+        
+    
+    
+            marker_1d8f818043f2d0711115932cb34520ac.bindTooltip(
+                `<div>
+                     Southern Oaks Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_62178d6ef6eb0037ba426d896e25987c = L.marker(
+                [35.3805619, -97.5468863],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_4b8543731ae92557009214652f5c14e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f498682dff9ea3ac944cfc78fe99eb30 = $(`<div id="html_f498682dff9ea3ac944cfc78fe99eb30" style="width: 100.0%; height: 100.0%;"><div><p>Day Living Center South</p><p>1681 SW 86th St.</p><p>405-688-5388</p><p>M-F: 7 a.m. - 5:30 p.m.</p></div></div>`)[0];
+                popup_4b8543731ae92557009214652f5c14e2.setContent(html_f498682dff9ea3ac944cfc78fe99eb30);
+            
+        
+
+        marker_62178d6ef6eb0037ba426d896e25987c.bindPopup(popup_4b8543731ae92557009214652f5c14e2)
+        ;
+
+        
+    
+    
+            marker_62178d6ef6eb0037ba426d896e25987c.bindTooltip(
+                `<div>
+                     Day Living Center South
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bee03d561b006afad1ee2ae596dc276d = L.marker(
+                [35.34976280000001, -97.5660735],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_529c77f84d454cf006d14dfb85b7e1ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b1109c05e9dcbe2f9e75456b23a6ea5 = $(`<div id="html_7b1109c05e9dcbe2f9e75456b23a6ea5" style="width: 100.0%; height: 100.0%;"><div><p>Earlywine Park YMCA</p><p>11801 S. May Ave.</p><p>405-378-0402</p><p>M-TH: 5 a.m. - 10 p.m., F: 5 a.m. - 7 p.m., SAT: 7 a.m. - 4 p.m., SUN: 1 p.m. - 5 p.m.</p></div></div>`)[0];
+                popup_529c77f84d454cf006d14dfb85b7e1ee.setContent(html_7b1109c05e9dcbe2f9e75456b23a6ea5);
+            
+        
+
+        marker_bee03d561b006afad1ee2ae596dc276d.bindPopup(popup_529c77f84d454cf006d14dfb85b7e1ee)
+        ;
+
+        
+    
+    
+            marker_bee03d561b006afad1ee2ae596dc276d.bindTooltip(
+                `<div>
+                     Earlywine Park YMCA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01e2779f71fec7913d8e8561ed13b665 = L.marker(
+                [35.4926779, -97.47608919999999],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_1493359c4e4cd3c49015ff6d75c2566c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca6158a99b6f02d7e929cf7496377b53 = $(`<div id="html_ca6158a99b6f02d7e929cf7496377b53" style="width: 100.0%; height: 100.0%;"><div><p>Ralph Ellison Library</p><p>2000 NE 23rd St.</p><p>405-424-1437</p><p>M-TH: 9 a.m. - 9 p.m., F: 9 a.m. - 6 p.m., SAT: 9 a.m. - 5 p.m., SUN: 1 p.m. - 6 p.m.</p></div></div>`)[0];
+                popup_1493359c4e4cd3c49015ff6d75c2566c.setContent(html_ca6158a99b6f02d7e929cf7496377b53);
+            
+        
+
+        marker_01e2779f71fec7913d8e8561ed13b665.bindPopup(popup_1493359c4e4cd3c49015ff6d75c2566c)
+        ;
+
+        
+    
+    
+            marker_01e2779f71fec7913d8e8561ed13b665.bindTooltip(
+                `<div>
+                     Ralph Ellison Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3226c425242214fdf8fbe1801962b63b = L.marker(
+                [35.4066774, -97.5637417],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_0f614eb6793d81140935899a65ed724e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c4d18570311e546a190c9567f8849ee = $(`<div id="html_9c4d18570311e546a190c9567f8849ee" style="width: 100.0%; height: 100.0%;"><div><p>Almonte Library</p><p>2727 SW 59th</p><p>405-606-3575</p><p>M-TH: 9 a.m. - 9 p.m, F: 9 a.m - 6 p.m., SAT: 9 a.m - 5 p.m., SUN: 1 p.m. - 6 p.m.</p></div></div>`)[0];
+                popup_0f614eb6793d81140935899a65ed724e.setContent(html_9c4d18570311e546a190c9567f8849ee);
+            
+        
+
+        marker_3226c425242214fdf8fbe1801962b63b.bindPopup(popup_0f614eb6793d81140935899a65ed724e)
+        ;
+
+        
+    
+    
+            marker_3226c425242214fdf8fbe1801962b63b.bindTooltip(
+                `<div>
+                     Almonte Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51b4967b9aac17d9a7d6638995484351 = L.marker(
+                [35.4865393, -93.8286466],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_4be452f2b82da0b23308efb16428f908 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43581b5f4e5b9c8d1ed1b04ed0f15699 = $(`<div id="html_43581b5f4e5b9c8d1ed1b04ed0f15699" style="width: 100.0%; height: 100.0%;"><div><p>Gardner Memorial Family Life Center</p><p>104 S. 5th St.</p><p>479-667-3659</p><p>M-F: 9 a.m. - 7 p.m.</p></div></div>`)[0];
+                popup_4be452f2b82da0b23308efb16428f908.setContent(html_43581b5f4e5b9c8d1ed1b04ed0f15699);
+            
+        
+
+        marker_51b4967b9aac17d9a7d6638995484351.bindPopup(popup_4be452f2b82da0b23308efb16428f908)
+        ;
+
+        
+    
+    
+            marker_51b4967b9aac17d9a7d6638995484351.bindTooltip(
+                `<div>
+                     Gardner Memorial Family Life Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_85ad69bc6b641df8e21ed300511fbb45 = L.marker(
+                [34.741125, -97.2215859],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_7d532e1378abfc695495fb0432b04d7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e02b21c3cccc2ef7f6cc7748d74e509b = $(`<div id="html_e02b21c3cccc2ef7f6cc7748d74e509b" style="width: 100.0%; height: 100.0%;"><div><p>Nora Sparks Warren Library</p><p>210 N. Willow St.</p><p>405-238-5188</p><p>M-TH: 9 a.m. - 6 p.m.</p></div></div>`)[0];
+                popup_7d532e1378abfc695495fb0432b04d7e.setContent(html_e02b21c3cccc2ef7f6cc7748d74e509b);
+            
+        
+
+        marker_85ad69bc6b641df8e21ed300511fbb45.bindPopup(popup_7d532e1378abfc695495fb0432b04d7e)
+        ;
+
+        
+    
+    
+            marker_85ad69bc6b641df8e21ed300511fbb45.bindTooltip(
+                `<div>
+                     Nora Sparks Warren Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d356e9ab20b414cbfe61e304e2359212 = L.marker(
+                [35.05155269999999, -94.62522270000001],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_9f1d7b7355c742974dc94d341fdffad0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8025371301c64de349c35122e543f17f = $(`<div id="html_8025371301c64de349c35122e543f17f" style="width: 100.0%; height: 100.0%;"><div><p>Don W. Reynolds Community Services Center</p><p>105 Reynolds Ave.</p><p>918-647-4204</p><p>M-F: 8 a.m. - 5 p.m.</p></div></div>`)[0];
+                popup_9f1d7b7355c742974dc94d341fdffad0.setContent(html_8025371301c64de349c35122e543f17f);
+            
+        
+
+        marker_d356e9ab20b414cbfe61e304e2359212.bindPopup(popup_9f1d7b7355c742974dc94d341fdffad0)
+        ;
+
+        
+    
+    
+            marker_d356e9ab20b414cbfe61e304e2359212.bindTooltip(
+                `<div>
+                     Don W. Reynolds Community Services Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47f709e5a9c4779b9773b46977248b58 = L.marker(
+                [35.9913803, -96.1024255],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_13fc03321911cf5e747a06a21f723659 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9b409eeabb61fcf4c62df589e5d7946 = $(`<div id="html_c9b409eeabb61fcf4c62df589e5d7946" style="width: 100.0%; height: 100.0%;"><div><p>Sapulpa Community Resource Center</p><p>620 S. Linden St.</p><p>918-224-3266</p><p>M-F: 8:30 a.m. - 5 p.m. (Referral agency only)</p></div></div>`)[0];
+                popup_13fc03321911cf5e747a06a21f723659.setContent(html_c9b409eeabb61fcf4c62df589e5d7946);
+            
+        
+
+        marker_47f709e5a9c4779b9773b46977248b58.bindPopup(popup_13fc03321911cf5e747a06a21f723659)
+        ;
+
+        
+    
+    
+            marker_47f709e5a9c4779b9773b46977248b58.bindTooltip(
+                `<div>
+                     Sapulpa Community Resource Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4cd47954ce4d29878f84bc20a66be60d = L.marker(
+                [35.9988354, -96.1152323],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_84677f18485782575474c4769bb0fd01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_386d994db5a53bad381e81030b3d74ba = $(`<div id="html_386d994db5a53bad381e81030b3d74ba" style="width: 100.0%; height: 100.0%;"><div><p>Sapulpa Public Library</p><p>27 W. Dewey Ave.</p><p>918-224-5624</p><p>M-TH: 9 a.m. - 6:45 p.m., F: 9 a.m. - 4:45 p.m., SAT: 10 a.m. - 1:45 p.m.</p></div></div>`)[0];
+                popup_84677f18485782575474c4769bb0fd01.setContent(html_386d994db5a53bad381e81030b3d74ba);
+            
+        
+
+        marker_4cd47954ce4d29878f84bc20a66be60d.bindPopup(popup_84677f18485782575474c4769bb0fd01)
+        ;
+
+        
+    
+    
+            marker_4cd47954ce4d29878f84bc20a66be60d.bindTooltip(
+                `<div>
+                     Sapulpa Public Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b21ae1a531143dcf2826b9586393349f = L.marker(
+                [35.2245201, -96.67057299999999],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_77a35c338fc3bdff96ca4e0f0e5fb737 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8dda33193d1c11cae543ec5959e25692 = $(`<div id="html_8dda33193d1c11cae543ec5959e25692" style="width: 100.0%; height: 100.0%;"><div><p>Seminole Public Library</p><p>424 N. Main St.</p><p>405-382-4221</p><p>M-TH: 7:30 a.m. - 6 p.m., F: 7:30 a.m. - 5 p.m., SAT: 8:30 a.m. - 12:30 p.m.</p></div></div>`)[0];
+                popup_77a35c338fc3bdff96ca4e0f0e5fb737.setContent(html_8dda33193d1c11cae543ec5959e25692);
+            
+        
+
+        marker_b21ae1a531143dcf2826b9586393349f.bindPopup(popup_77a35c338fc3bdff96ca4e0f0e5fb737)
+        ;
+
+        
+    
+    
+            marker_b21ae1a531143dcf2826b9586393349f.bindTooltip(
+                `<div>
+                     Seminole Public Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5b8a25e4b3c709b6946ca1255398007 = L.marker(
+                [35.3224354, -96.9252322],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_fb78f5dcd439505acea1472a18ad47a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_529a331b50f6dea23d8b4491918a0467 = $(`<div id="html_529a331b50f6dea23d8b4491918a0467" style="width: 100.0%; height: 100.0%;"><div><p>The Homeless Resource Center (HRC)</p><p>506 S. Beard St.</p><p>405-287-1777</p><p>M-TH: 12 p.m. - 5 p.m., SAT: 10 a.m. - 5 p.m. (As volunteer staffing increases, additional hours may be added)</p></div></div>`)[0];
+                popup_fb78f5dcd439505acea1472a18ad47a1.setContent(html_529a331b50f6dea23d8b4491918a0467);
+            
+        
+
+        marker_a5b8a25e4b3c709b6946ca1255398007.bindPopup(popup_fb78f5dcd439505acea1472a18ad47a1)
+        ;
+
+        
+    
+    
+            marker_a5b8a25e4b3c709b6946ca1255398007.bindTooltip(
+                `<div>
+                     The Homeless Resource Center (HRC)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_37e2bb2a26cfb9bdc7064c75fd8d39d8 = L.marker(
+                [34.5078669, -96.9683498],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_67886c33026412b62e011ab57351dadc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7dc58eda51bdca2301f90175e0ee48a9 = $(`<div id="html_7dc58eda51bdca2301f90175e0ee48a9" style="width: 100.0%; height: 100.0%;"><div><p>Parker Memorial Library</p><p>500 West Broadway</p><p>580-634-2315</p><p>M-TH: 11:30 a.m. - 5:30 p.m., F: 11:30 a.m. - 2:30 p.m., SAT: 10 a.m. - 1 p.m.</p></div></div>`)[0];
+                popup_67886c33026412b62e011ab57351dadc.setContent(html_7dc58eda51bdca2301f90175e0ee48a9);
+            
+        
+
+        marker_37e2bb2a26cfb9bdc7064c75fd8d39d8.bindPopup(popup_67886c33026412b62e011ab57351dadc)
+        ;
+
+        
+    
+    
+            marker_37e2bb2a26cfb9bdc7064c75fd8d39d8.bindTooltip(
+                `<div>
+                     Parker Memorial Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ac16015a2ebbf2494375bf7d997b2ed = L.marker(
+                [35.5754657, -97.549782],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_3aa60d928fc70eb14bccd1d7f6a9ceab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_951860e9ed810f2228e9401765ef9ad4 = $(`<div id="html_951860e9ed810f2228e9401765ef9ad4" style="width: 100.0%; height: 100.0%;"><div><p>The Village Library</p><p>10307 N. Penn Ave.</p><p>405-755-0710</p><p>M-TH: 9 a.m. - 9 p.m., F: 9 a.m. - 6 p.m., SAT: 9 a.m. - 5 p.m., SUN: 1 p.m. - 6 p.m.</p></div></div>`)[0];
+                popup_3aa60d928fc70eb14bccd1d7f6a9ceab.setContent(html_951860e9ed810f2228e9401765ef9ad4);
+            
+        
+
+        marker_3ac16015a2ebbf2494375bf7d997b2ed.bindPopup(popup_3aa60d928fc70eb14bccd1d7f6a9ceab)
+        ;
+
+        
+    
+    
+            marker_3ac16015a2ebbf2494375bf7d997b2ed.bindTooltip(
+                `<div>
+                     The Village Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_646d08a13f4acd5204ed7e7154a3b616 = L.marker(
+                [34.2349461, -96.67837659999999],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_e4714646704f0dd083135d146d6754bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a1ad46b75594cd82138d03f8a97afba = $(`<div id="html_2a1ad46b75594cd82138d03f8a97afba" style="width: 100.0%; height: 100.0%;"><div><p>Johnston County Library</p><p>116 W. Main St.</p><p>580-371-3006</p><p>M-TH: 11:30 a.m. - 5:30 p.m., F: 11:30 a.m. - 2:30 p.m., SAT: 10 a.m. - 1 p.m.</p></div></div>`)[0];
+                popup_e4714646704f0dd083135d146d6754bd.setContent(html_2a1ad46b75594cd82138d03f8a97afba);
+            
+        
+
+        marker_646d08a13f4acd5204ed7e7154a3b616.bindPopup(popup_e4714646704f0dd083135d146d6754bd)
+        ;
+
+        
+    
+    
+            marker_646d08a13f4acd5204ed7e7154a3b616.bindTooltip(
+                `<div>
+                     Johnston County Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b49e4fec80125c5a2123e92469ba495 = L.marker(
+                [36.1364899, -95.9307079],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_480ad5c2b9d7ff00eed987612d3a25e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61e6e879bbb5b464a28aec225ac5bacb = $(`<div id="html_61e6e879bbb5b464a28aec225ac5bacb" style="width: 100.0%; height: 100.0%;"><div><p>Expo Square</p><p>4145 E. 21st St.</p><p>405-744-1113</p><p>7 Days/Week: 10 a.m. - 8 p.m.</p></div></div>`)[0];
+                popup_480ad5c2b9d7ff00eed987612d3a25e8.setContent(html_61e6e879bbb5b464a28aec225ac5bacb);
+            
+        
+
+        marker_7b49e4fec80125c5a2123e92469ba495.bindPopup(popup_480ad5c2b9d7ff00eed987612d3a25e8)
+        ;
+
+        
+    
+    
+            marker_7b49e4fec80125c5a2123e92469ba495.bindTooltip(
+                `<div>
+                     Expo Square
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_52a1fa4a6772db420296198f920b25bc = L.marker(
+                [36.1564393, -95.9976136],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_67d0d10d8bf2b05f1d133a5e960ccf02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39b3ab409cba370b78b523bad5a9e80d = $(`<div id="html_39b3ab409cba370b78b523bad5a9e80d" style="width: 100.0%; height: 100.0%;"><div><p>The Salvation Army Center of Hope</p><p>102 N. Denver Ave.</p><p>918-582-7201</p><p>7 Days/Week, 24 Hours/Day, 365 Days/Year (Capacity limits)</p></div></div>`)[0];
+                popup_67d0d10d8bf2b05f1d133a5e960ccf02.setContent(html_39b3ab409cba370b78b523bad5a9e80d);
+            
+        
+
+        marker_52a1fa4a6772db420296198f920b25bc.bindPopup(popup_67d0d10d8bf2b05f1d133a5e960ccf02)
+        ;
+
+        
+    
+    
+            marker_52a1fa4a6772db420296198f920b25bc.bindTooltip(
+                `<div>
+                     The Salvation Army Center of Hope
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20b5db14ce3474091b41960ca5025e92 = L.marker(
+                [36.1603572, -95.9979245],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_85b9fb138cc01a8ad4dd81e971d50be5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_adc1ea46b764c0986cf6e44e8fbdd966 = $(`<div id="html_adc1ea46b764c0986cf6e44e8fbdd966" style="width: 100.0%; height: 100.0%;"><div><p>John 3:16 Mission</p><p>506 N. Cheyenne Ave.</p><p>918-587-1186</p><p>7 Days/Week, 24 Hours/Day, 365 Days/Year</p></div></div>`)[0];
+                popup_85b9fb138cc01a8ad4dd81e971d50be5.setContent(html_adc1ea46b764c0986cf6e44e8fbdd966);
+            
+        
+
+        marker_20b5db14ce3474091b41960ca5025e92.bindPopup(popup_85b9fb138cc01a8ad4dd81e971d50be5)
+        ;
+
+        
+    
+    
+            marker_20b5db14ce3474091b41960ca5025e92.bindTooltip(
+                `<div>
+                     John 3:16 Mission
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87faf57066f24a940364b272bdcce95f = L.marker(
+                [36.1524047, -96.01945860000001],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_2ec852abce067905acd06d7fc9d53f78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54355dbb10c2cad05963b72d5b5306f4 = $(`<div id="html_54355dbb10c2cad05963b72d5b5306f4" style="width: 100.0%; height: 100.0%;"><div><p>Tulsa County Emergency Shelter</p><p>2401 Charles Page Boulevard</p><p>918-896-5591</p><p>7 Days/Week, 24 Hours/Day, 365 Days/Year</p></div></div>`)[0];
+                popup_2ec852abce067905acd06d7fc9d53f78.setContent(html_54355dbb10c2cad05963b72d5b5306f4);
+            
+        
+
+        marker_87faf57066f24a940364b272bdcce95f.bindPopup(popup_2ec852abce067905acd06d7fc9d53f78)
+        ;
+
+        
+    
+    
+            marker_87faf57066f24a940364b272bdcce95f.bindTooltip(
+                `<div>
+                     Tulsa County Emergency Shelter
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bd5b899f5246c0653087873d8fc1c80 = L.marker(
+                [35.5429035, -95.3108543],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_44def4ada204b58efd4111286c7fb32c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54c01ce9073d30a96d392c822d2f6d82 = $(`<div id="html_54c01ce9073d30a96d392c822d2f6d82" style="width: 100.0%; height: 100.0%;"><div><p>Warner Volunteer Fire Department</p><p>1000 Old Highway 64</p><p>918-463-2696</p><p>Only during an outage or emergency situation</p></div></div>`)[0];
+                popup_44def4ada204b58efd4111286c7fb32c.setContent(html_54c01ce9073d30a96d392c822d2f6d82);
+            
+        
+
+        marker_6bd5b899f5246c0653087873d8fc1c80.bindPopup(popup_44def4ada204b58efd4111286c7fb32c)
+        ;
+
+        
+    
+    
+            marker_6bd5b899f5246c0653087873d8fc1c80.bindTooltip(
+                `<div>
+                     Warner Volunteer Fire Department
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9d99665439cadd1a5946b8f3f6332bf = L.marker(
+                [34.1618589, -97.42518609999999],
+                {}
+            ).addTo(map_f347406aadab2cfddb699852005417fd);
+        
+    
+        var popup_ff110990553025a03142d80f9cfc536f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8c7bc462198c638bcf29dbac6442b11 = $(`<div id="html_d8c7bc462198c638bcf29dbac6442b11" style="width: 100.0%; height: 100.0%;"><div><p>Wilson Public Library</p><p>1087 US HWY 70A</p><p>580-668-2486</p><p>M: 1 p.m. - 6 p.m.</p></div></div>`)[0];
+                popup_ff110990553025a03142d80f9cfc536f.setContent(html_d8c7bc462198c638bcf29dbac6442b11);
+            
+        
+
+        marker_e9d99665439cadd1a5946b8f3f6332bf.bindPopup(popup_ff110990553025a03142d80f9cfc536f)
+        ;
+
+        
+    
+    
+            marker_e9d99665439cadd1a5946b8f3f6332bf.bindTooltip(
+                `<div>
+                     Wilson Public Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

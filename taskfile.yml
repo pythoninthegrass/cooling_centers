@@ -1,0 +1,97 @@
+version: "3.0"
+
+set: ['e', 'u', 'pipefail']
+shopt: ['globstar']
+
+dotenv: ['.env']
+
+env:
+  TLD:
+    sh: git rev-parse --show-toplevel
+  APP:
+    sh: echo "${APP_NAME:-ok-cooling-centers}"
+  POETRY:
+    sh: "echo ${POETRY:-1.8.3}"
+  PY_VER:
+    sh: "echo ${PY_VER:-3.11.9}"
+  SCRIPT:
+  UNAME:
+    sh: "uname -s"
+
+vars:
+
+includes:
+  docker:
+    taskfile: ./taskfiles/docker.yml
+    aliases: ["docker"]
+  poetry:
+    taskfile: ./taskfiles/poetry.yml
+    aliases: ["poetry"]
+
+tasks:
+  print:
+    - |
+      echo -e "TLD:\t\t$TLD"
+      echo -e "APP:\t\t{{.APP}}"
+      echo -e "BUILD:\t\t{{.BUILD}}"
+      echo -e "COMPOSE_FILE:\t{{.COMPOSE_FILE}}"
+      echo -e "DOCKERFILE:\t{{.DOCKERFILE}}"
+      echo -e "PLATFORM:\t{{.PLATFORM}}"
+      echo -e "POETRY:\t\t{{.POETRY}}"
+      echo -e "PY_VER:\t\t{{.PY_VER}}"
+      echo -e "SCRIPT:\t\t{{.SCRIPT}}"
+      echo -e "REGISTRY:\t$REGISTRY"
+      echo -e "SERVICE:\t{{.SERVICE}}"
+      echo -e "TAG:\t\t${TAG}"
+      echo -e "USER_NAME:\t$USER_NAME"
+      echo -e "UNAME:\t\t$UNAME"
+
+  default:
+    desc: "Default task"
+    cmds:
+      - task --list
+
+  install:
+    desc: "Install project dependencies"
+    cmds:
+      - |
+        make install
+
+  pre-commit:
+    desc: "Run pre-commit hooks"
+    cmds:
+      - pre-commit run --all-files
+
+  lint:
+    desc: "Run linters"
+    cmds:
+      - poetry run ruff check --fix --respect-gitignore
+
+  format:
+    desc: "Run formatters"
+    cmds:
+      - poetry run ruff format --respect-gitignore
+
+  test:
+    desc: "Run tests"
+    cmds:
+      - poetry run pytest
+
+  pyclean:
+    desc: "Remove .pyc and __pycache__"
+    cmds:
+      - |
+        args=(
+          .
+          --debris
+          --verbose
+          -i .devbox
+        )
+        case "{{.CLI_ARGS}}" in
+          dry-run)
+            poetry run pyclean "${args[@]}" --dry-run
+            ;;
+          *)
+            poetry run pyclean "${args[@]}"
+            ;;
+        esac
