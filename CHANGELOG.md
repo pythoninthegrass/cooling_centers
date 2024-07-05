@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/pythoninthegrass/cooling_centers/compare/v1.4.0...v1.4.0) (2024-07-05)
+
+
+### Miscellaneous Chores
+
+* release 1.4.0 ([2b82bee](https://github.com/pythoninthegrass/cooling_centers/commit/2b82bee29bfceee1f8dd52f4e6959ad98cac5cea))
+
 ## [1.4.0](https://github.com/pythoninthegrass/ok_cooling_centers/compare/v1.3.0...v1.4.0) (2024-06-25)
 
 
