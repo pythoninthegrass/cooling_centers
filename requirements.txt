@@ -1,120 +1,457 @@
-absl-py==2.1.0 ; python_version >= "3.11" and python_version < "3.13"
-aiohttp==3.9.5 ; python_version >= "3.11" and python_version < "3.13"
-aiosignal==1.3.1 ; python_version >= "3.11" and python_version < "3.13"
-annotated-types==0.7.0 ; python_version >= "3.11" and python_version < "3.13"
-anyio==4.4.0 ; python_version >= "3.11" and python_version < "3.13"
-asttokens==2.4.1 ; python_version >= "3.11" and python_version < "3.13"
-astunparse==1.6.3 ; python_version >= "3.11" and python_version < "3.13"
-attrs==23.2.0 ; python_version >= "3.11" and python_version < "3.13"
-beautifulsoup4==4.12.3 ; python_version >= "3.11" and python_version < "3.13"
-branca==0.7.2 ; python_version >= "3.11" and python_version < "3.13"
-certifi==2024.6.2 ; python_version >= "3.11" and python_version < "3.13"
-cffi==1.16.0 ; python_version >= "3.11" and python_version < "3.13" and platform_python_implementation != "PyPy"
-charset-normalizer==3.3.2 ; python_version >= "3.11" and python_version < "3.13"
-click==8.1.7 ; python_version >= "3.11" and python_version < "3.13"
-colorama==0.4.6 ; python_version >= "3.11" and python_version < "3.13" and (sys_platform == "win32" or platform_system == "Windows")
-cryptography==42.0.8 ; python_version >= "3.11" and python_version < "3.13"
-decorator==5.1.1 ; python_version >= "3.11" and python_version < "3.13"
-distro==1.9.0 ; python_version >= "3.11" and python_version < "3.13"
-dnspython==2.6.1 ; python_version >= "3.11" and python_version < "3.13"
-email-validator==2.2.0 ; python_version >= "3.11" and python_version < "3.13"
-executing==2.0.1 ; python_version >= "3.11" and python_version < "3.13"
-fastapi-cli==0.0.4 ; python_version >= "3.11" and python_version < "3.13"
-fastapi==0.111.0 ; python_version >= "3.11" and python_version < "3.13"
-flatbuffers==24.3.25 ; python_version >= "3.11" and python_version < "3.13"
-folium==0.14.0 ; python_version >= "3.11" and python_version < "3.13"
-frozenlist==1.4.1 ; python_version >= "3.11" and python_version < "3.13"
-gast==0.5.4 ; python_version >= "3.11" and python_version < "3.13"
-geographiclib==2.0 ; python_version >= "3.11" and python_version < "3.13"
-geopy[aiohttp]==2.4.1 ; python_version >= "3.11" and python_version < "3.13"
-google-pasta==0.2.0 ; python_version >= "3.11" and python_version < "3.13"
-graphql-core==3.2.3 ; python_version >= "3.11" and python_version < "3.13"
-grpcio==1.64.1 ; python_version >= "3.11" and python_version < "3.13"
-h11==0.14.0 ; python_version >= "3.11" and python_version < "3.13"
-h5py==3.11.0 ; python_version >= "3.11" and python_version < "3.13"
-httpcore==1.0.5 ; python_version >= "3.11" and python_version < "3.13"
-httptools==0.6.1 ; python_version >= "3.11" and python_version < "3.13"
-httpx==0.27.0 ; python_version >= "3.11" and python_version < "3.13"
-idna==3.7 ; python_version >= "3.11" and python_version < "3.13"
-imageio==2.34.2 ; python_version >= "3.11" and python_version < "3.13"
-ipython==8.25.0 ; python_version >= "3.11" and python_version < "3.13"
-jedi==0.19.1 ; python_version >= "3.11" and python_version < "3.13"
-jinja2==3.1.4 ; python_version >= "3.11" and python_version < "3.13"
-jpype1==1.5.0 ; python_version >= "3.11" and python_version < "3.13"
-keras==3.3.3 ; python_version >= "3.11" and python_version < "3.13"
-lazy-loader==0.4 ; python_version >= "3.11" and python_version < "3.13"
-libclang==18.1.1 ; python_version >= "3.11" and python_version < "3.13"
-libcst==1.4.0 ; python_version >= "3.11" and python_version < "3.13"
-lxml==5.2.2 ; python_version >= "3.11" and python_version < "3.13"
-markdown-it-py==3.0.0 ; python_version >= "3.11" and python_version < "3.13"
-markdown==3.6 ; python_version >= "3.11" and python_version < "3.13"
-markupsafe==2.1.5 ; python_version >= "3.11" and python_version < "3.13"
-matplotlib-inline==0.1.7 ; python_version >= "3.11" and python_version < "3.13"
-mdurl==0.1.2 ; python_version >= "3.11" and python_version < "3.13"
-ml-dtypes==0.3.2 ; python_version >= "3.11" and python_version < "3.13"
-multidict==6.0.5 ; python_version >= "3.11" and python_version < "3.13"
-namex==0.0.8 ; python_version >= "3.11" and python_version < "3.13"
-networkx==3.3 ; python_version >= "3.11" and python_version < "3.13"
-numpy==1.26.4 ; python_version >= "3.11" and python_version < "3.13"
-opt-einsum==3.3.0 ; python_version >= "3.11" and python_version < "3.13"
-optree==0.11.0 ; python_version >= "3.11" and python_version < "3.13"
-orjson==3.10.5 ; python_version >= "3.11" and python_version < "3.13"
-packaging==24.1 ; python_version >= "3.11" and python_version < "3.13"
-pandas==2.2.2 ; python_version >= "3.11" and python_version < "3.13"
-parso==0.8.4 ; python_version >= "3.11" and python_version < "3.13"
-pdfminer-six==20231228 ; python_version >= "3.11" and python_version < "3.13"
-pdftotree==0.5.0 ; python_version >= "3.11" and python_version < "3.13"
-pexpect==4.9.0 ; python_version >= "3.11" and python_version < "3.13" and (sys_platform != "win32" and sys_platform != "emscripten")
-pillow==10.3.0 ; python_version >= "3.11" and python_version < "3.13"
-prompt-toolkit==3.0.47 ; python_version >= "3.11" and python_version < "3.13"
-protobuf==4.25.3 ; python_version >= "3.11" and python_version < "3.13"
-ptyprocess==0.7.0 ; python_version >= "3.11" and python_version < "3.13" and (sys_platform != "win32" and sys_platform != "emscripten")
-pure-eval==0.2.2 ; python_version >= "3.11" and python_version < "3.13"
-pycparser==2.22 ; python_version >= "3.11" and python_version < "3.13" and platform_python_implementation != "PyPy"
-pydantic-core==2.18.4 ; python_version >= "3.11" and python_version < "3.13"
-pydantic==2.7.4 ; python_version >= "3.11" and python_version < "3.13"
-pygments==2.18.0 ; python_version >= "3.11" and python_version < "3.13"
-python-dateutil==2.9.0.post0 ; python_version >= "3.11" and python_version < "3.13"
-python-decouple==3.8 ; python_version >= "3.11" and python_version < "3.13"
-python-dotenv==1.0.1 ; python_version >= "3.11" and python_version < "3.13"
-python-multipart==0.0.9 ; python_version >= "3.11" and python_version < "3.13"
-pytz==2024.1 ; python_version >= "3.11" and python_version < "3.13"
-pyyaml==6.0.1 ; python_version >= "3.11" and python_version < "3.13"
-requests==2.32.3 ; python_version >= "3.11" and python_version < "3.13"
-rich==13.7.1 ; python_version >= "3.11" and python_version < "3.13"
-scikit-image==0.24.0 ; python_version >= "3.11" and python_version < "3.13"
-scipy==1.14.0 ; python_version >= "3.11" and python_version < "3.13"
-selectivesearch==0.4 ; python_version >= "3.11" and python_version < "3.13"
-setuptools==70.1.0 ; python_version >= "3.11" and python_version < "3.13"
-shellingham==1.5.4 ; python_version >= "3.11" and python_version < "3.13"
-six==1.16.0 ; python_version >= "3.11" and python_version < "3.13"
-sklearn==0.0.post12 ; python_version >= "3.11" and python_version < "3.13"
-sniffio==1.3.1 ; python_version >= "3.11" and python_version < "3.13"
-soupsieve==2.5 ; python_version >= "3.11" and python_version < "3.13"
-stack-data==0.6.3 ; python_version >= "3.11" and python_version < "3.13"
-starlette==0.37.2 ; python_version >= "3.11" and python_version < "3.13"
-strawberry-graphql[debug-server,fastapi]==0.235.0 ; python_version >= "3.11" and python_version < "3.13"
-tabula-py[jpype]==2.9.3 ; python_version >= "3.11" and python_version < "3.13"
-tensorboard-data-server==0.7.2 ; python_version >= "3.11" and python_version < "3.13"
-tensorboard==2.16.2 ; python_version >= "3.11" and python_version < "3.13"
-tensorflow-io-gcs-filesystem==0.37.0 ; python_version >= "3.11" and python_version < "3.12"
-tensorflow==2.16.1 ; python_version >= "3.11" and python_version < "3.13"
-termcolor==2.4.0 ; python_version >= "3.11" and python_version < "3.13"
-tifffile==2024.6.18 ; python_version >= "3.11" and python_version < "3.13"
-traitlets==5.14.3 ; python_version >= "3.11" and python_version < "3.13"
-typer==0.12.3 ; python_version >= "3.11" and python_version < "3.13"
-typing-extensions==4.12.2 ; python_version >= "3.11" and python_version < "3.13"
-tzdata==2024.1 ; python_version >= "3.11" and python_version < "3.13"
-ujson==5.10.0 ; python_version >= "3.11" and python_version < "3.13"
-urllib3==2.2.2 ; python_version >= "3.11" and python_version < "3.13"
-uvicorn==0.30.1 ; python_version >= "3.11" and python_version < "3.13"
-uvicorn[standard]==0.30.1 ; python_version >= "3.11" and python_version < "3.13"
-uvloop==0.19.0 ; (sys_platform != "win32" and sys_platform != "cygwin") and platform_python_implementation != "PyPy" and python_version >= "3.11" and python_version < "3.13"
-wand==0.6.13 ; python_version >= "3.11" and python_version < "3.13"
-watchfiles==0.22.0 ; python_version >= "3.11" and python_version < "3.13"
-wcwidth==0.2.13 ; python_version >= "3.11" and python_version < "3.13"
-websockets==12.0 ; python_version >= "3.11" and python_version < "3.13"
-werkzeug==3.0.3 ; python_version >= "3.11" and python_version < "3.13"
-wheel==0.43.0 ; python_version >= "3.11" and python_version < "3.13"
-wrapt==1.16.0 ; python_version >= "3.11" and python_version < "3.13"
-yarl==1.9.4 ; python_version >= "3.11" and python_version < "3.13"
+# This file was autogenerated by uv via the following command:
+#    uv pip compile - -o requirements.txt
+absl-py==2.1.0
+    # via
+    #   keras
+    #   tensorboard
+    #   tensorflow
+aiohttp==3.9.5
+aiosignal==1.3.1
+    # via aiohttp
+annotated-types==0.7.0
+    # via pydantic
+anyio==4.4.0
+    # via
+    #   anysqlite
+    #   httpx
+    #   starlette
+    #   watchfiles
+anysqlite==0.0.5
+asttokens==2.4.1
+    # via
+    #   icecream
+    #   stack-data
+astunparse==1.6.3
+    # via tensorflow
+attrs==23.2.0
+    # via
+    #   aiohttp
+    #   hypothesis
+beautifulsoup4==4.12.3
+    # via pdftotree
+black==24.4.2
+branca==0.7.2
+    # via folium
+build==1.2.1
+    # via poetry
+cachecontrol==0.14.0
+    # via poetry
+certifi==2024.7.4
+    # via
+    #   httpcore
+    #   httpx
+    #   requests
+cffi==1.16.0
+    # via
+    #   cryptography
+    #   xattr
+charset-normalizer==3.3.2
+    # via
+    #   pdfminer-six
+    #   requests
+cleo==2.1.0
+    # via poetry
+click==8.1.7
+    # via
+    #   black
+    #   typer
+    #   uvicorn
+colorama==0.4.6
+    # via icecream
+coverage==7.5.4
+    # via pytest-cov
+crashtest==0.4.1
+    # via
+    #   cleo
+    #   poetry
+cryptography==42.0.8
+    # via pdfminer-six
+decorator==5.1.1
+    # via ipython
+distlib==0.3.8
+    # via virtualenv
+distro==1.9.0
+    # via tabula-py
+dnspython==2.6.1
+    # via email-validator
+dulwich==0.21.7
+    # via poetry
+email-validator==2.2.0
+    # via fastapi
+execnet==2.1.1
+    # via pytest-xdist
+executing==2.0.1
+    # via
+    #   icecream
+    #   stack-data
+fastapi==0.111.0
+fastapi-cli==0.0.4
+    # via fastapi
+fastjsonschema==2.20.0
+    # via poetry
+filelock==3.15.4
+    # via
+    #   cachecontrol
+    #   virtualenv
+flatbuffers==24.3.25
+    # via tensorflow
+folium==0.14.0
+frozenlist==1.4.1
+    # via
+    #   aiohttp
+    #   aiosignal
+gast==0.6.0
+    # via tensorflow
+geographiclib==2.0
+    # via geopy
+geopy==2.4.1
+google-pasta==0.2.0
+    # via tensorflow
+graphql-core==3.2.3
+    # via strawberry-graphql
+greenlet==3.0.3
+    # via playwright
+grpcio==1.64.1
+    # via
+    #   tensorboard
+    #   tensorflow
+h11==0.14.0
+    # via
+    #   httpcore
+    #   uvicorn
+h5py==3.11.0
+    # via
+    #   keras
+    #   tensorflow
+hishel==0.0.29
+httpcore==1.0.5
+    # via httpx
+httptools==0.6.1
+    # via uvicorn
+httpx==0.27.0
+    # via
+    #   fastapi
+    #   hishel
+hypothesis==6.105.0
+icecream==2.1.3
+idna==3.7
+    # via
+    #   anyio
+    #   email-validator
+    #   httpx
+    #   requests
+    #   yarl
+imageio==2.34.2
+    # via scikit-image
+importlib-metadata==8.0.0
+    # via keyring
+iniconfig==2.0.0
+    # via pytest
+installer==0.7.0
+    # via poetry
+ipython==8.26.0
+    # via pdftotree
+jaraco-classes==3.4.0
+    # via keyring
+jedi==0.19.1
+    # via ipython
+jinja2==3.1.4
+    # via
+    #   branca
+    #   fastapi
+    #   folium
+jpype1==1.5.0
+keras==3.4.1
+    # via
+    #   pdftotree
+    #   tensorflow
+keyring==24.3.1
+    # via poetry
+lazy-loader==0.4
+    # via scikit-image
+libclang==18.1.1
+    # via tensorflow
+libcst==1.4.0
+lxml==5.2.2
+markdown==3.6
+    # via tensorboard
+markdown-it-py==3.0.0
+    # via rich
+markupsafe==2.1.5
+    # via
+    #   jinja2
+    #   werkzeug
+matplotlib-inline==0.1.7
+    # via ipython
+mdurl==0.1.2
+    # via markdown-it-py
+ml-dtypes==0.3.2
+    # via
+    #   keras
+    #   tensorflow
+more-itertools==10.3.0
+    # via jaraco-classes
+msgpack==1.0.8
+    # via cachecontrol
+multidict==6.0.5
+    # via
+    #   aiohttp
+    #   yarl
+mypy-extensions==1.0.0
+    # via black
+namex==0.0.8
+    # via keras
+networkx==3.3
+    # via scikit-image
+numpy==1.26.4
+    # via
+    #   folium
+    #   h5py
+    #   imageio
+    #   keras
+    #   ml-dtypes
+    #   opt-einsum
+    #   pandas
+    #   pdftotree
+    #   scikit-image
+    #   scipy
+    #   selectivesearch
+    #   tabula-py
+    #   tensorboard
+    #   tensorflow
+    #   tifffile
+opt-einsum==3.3.0
+    # via tensorflow
+optree==0.12.0
+    # via keras
+orjson==3.10.6
+    # via fastapi
+packaging==24.1
+    # via
+    #   black
+    #   build
+    #   jpype1
+    #   keras
+    #   lazy-loader
+    #   poetry
+    #   pytest
+    #   scikit-image
+    #   tensorflow
+pandas==2.2.2
+    # via
+    #   pdftotree
+    #   tabula-py
+parso==0.8.4
+    # via jedi
+pathspec==0.12.1
+    # via black
+pdfminer-six==20231228
+    # via pdftotree
+pdftotree==0.5.0
+pexpect==4.9.0
+    # via
+    #   ipython
+    #   poetry
+pillow==10.4.0
+    # via
+    #   imageio
+    #   pdftotree
+    #   scikit-image
+pip==23.2.1
+pkginfo==1.11.1
+    # via poetry
+platformdirs==4.2.2
+    # via
+    #   black
+    #   poetry
+    #   virtualenv
+playwright==1.45.0
+pluggy==1.5.0
+    # via pytest
+poetry==1.8.3
+    # via
+    #   poetry-plugin-export
+    #   poetry-plugin-up
+poetry-core==1.9.0
+    # via
+    #   poetry
+    #   poetry-plugin-export
+poetry-plugin-export==1.8.0
+    # via poetry
+poetry-plugin-up==0.7.1
+prompt-toolkit==3.0.47
+    # via ipython
+protobuf==4.25.3
+    # via
+    #   tensorboard
+    #   tensorflow
+ptyprocess==0.7.0
+    # via pexpect
+pure-eval==0.2.2
+    # via stack-data
+pyclean==3.0.0
+pycparser==2.22
+    # via cffi
+pydantic==2.8.2
+    # via fastapi
+pydantic-core==2.20.1
+    # via pydantic
+pyee==11.1.0
+    # via playwright
+pygments==2.18.0
+    # via
+    #   icecream
+    #   ipython
+    #   rich
+pyproject-hooks==1.1.0
+    # via
+    #   build
+    #   poetry
+pytest==8.2.2
+    # via
+    #   pytest-asyncio
+    #   pytest-cov
+    #   pytest-datafiles
+    #   pytest-xdist
+pytest-asyncio==0.23.7
+pytest-cov==5.0.0
+pytest-datafiles==3.0.0
+pytest-xdist==3.6.1
+python-dateutil==2.9.0.post0
+    # via
+    #   pandas
+    #   strawberry-graphql
+python-decouple==3.8
+python-dotenv==1.0.1
+    # via uvicorn
+python-multipart==0.0.9
+    # via fastapi
+pytz==2024.1
+    # via pandas
+pyyaml==6.0.1
+    # via
+    #   libcst
+    #   uvicorn
+rapidfuzz==3.9.4
+    # via cleo
+requests==2.32.3
+    # via
+    #   cachecontrol
+    #   folium
+    #   poetry
+    #   requests-toolbelt
+    #   tensorflow
+requests-toolbelt==1.0.0
+    # via poetry
+rich==13.7.1
+    # via
+    #   keras
+    #   typer
+ruff==0.4.10
+scikit-image==0.24.0
+    # via selectivesearch
+scipy==1.14.0
+    # via scikit-image
+selectivesearch==0.4
+    # via pdftotree
+setuptools==70.2.0
+    # via
+    #   tensorboard
+    #   tensorflow
+shellingham==1.5.4
+    # via
+    #   poetry
+    #   typer
+six==1.16.0
+    # via
+    #   asttokens
+    #   astunparse
+    #   google-pasta
+    #   python-dateutil
+    #   tensorboard
+    #   tensorflow
+sklearn==0.0.post12
+    # via pdftotree
+sniffio==1.3.1
+    # via
+    #   anyio
+    #   httpx
+sortedcontainers==2.4.0
+    # via hypothesis
+soupsieve==2.5
+    # via beautifulsoup4
+stack-data==0.6.3
+    # via ipython
+starlette==0.37.2
+    # via fastapi
+strawberry-graphql==0.235.1
+tabula-py==2.9.3
+    # via pdftotree
+tensorboard==2.16.2
+    # via tensorflow
+tensorboard-data-server==0.7.2
+    # via tensorboard
+tensorflow==2.16.2
+    # via pdftotree
+tensorflow-io-gcs-filesystem==0.37.1
+    # via tensorflow
+termcolor==2.4.0
+    # via tensorflow
+tifffile==2024.7.2
+    # via scikit-image
+tomlkit==0.12.5
+    # via poetry
+traitlets==5.14.3
+    # via
+    #   ipython
+    #   matplotlib-inline
+trove-classifiers==2024.7.2
+    # via poetry
+typer==0.12.3
+    # via fastapi-cli
+typing-extensions==4.12.2
+    # via
+    #   fastapi
+    #   hishel
+    #   ipython
+    #   optree
+    #   pydantic
+    #   pydantic-core
+    #   pyee
+    #   strawberry-graphql
+    #   tensorflow
+    #   typer
+tzdata==2024.1
+    # via pandas
+ujson==5.10.0
+    # via fastapi
+urllib3==2.2.2
+    # via
+    #   dulwich
+    #   requests
+uvicorn==0.30.1
+    # via fastapi
+uvloop==0.19.0
+    # via uvicorn
+virtualenv==20.26.3
+    # via poetry
+wand==0.6.13
+    # via pdftotree
+watchfiles==0.22.0
+    # via uvicorn
+wcwidth==0.2.13
+    # via prompt-toolkit
+websockets==12.0
+    # via uvicorn
+werkzeug==3.0.3
+    # via tensorboard
+wheel==0.43.0
+    # via astunparse
+wrapt==1.16.0
+    # via tensorflow
+xattr==1.1.0
+    # via poetry
+yarl==1.9.4
+    # via aiohttp
+zipp==3.19.2
+    # via importlib-metadata
