@@ -11,7 +11,10 @@ from pathlib import Path
 base_dir = Path(__file__).resolve().parents[1]
 google_api_key = config("GOOGLE_API_KEY")
 csv_dir = base_dir / 'csv'
-csv_file = csv_dir / 'cooling_centers_2024.csv'
+csv_file = csv_dir / 'ok_cooling_centers_2024.csv'
+
+# read existing csv
+df = pd.read_csv(csv_file, header=0)
 
 
 def get_lat_long(address):
@@ -28,16 +31,17 @@ def get_lat_long(address):
         return None
 
 
+def set_lat_long(location_column, address_column):
+    df['latitude_longitude'] = df.apply(
+        lambda row: get_lat_long(f"{row[location_column]}, {row[address_column]}"), axis=1
+    )
+
+
 def main():
-    # read existing csv
-    df = pd.read_csv(csv_file, header=0)
-
-    # find latitude and longitude for each address
-    df['latitude_longitude'] = df.apply(lambda row: get_lat_long(f"{row['city_county']}, {row['address']}"), axis=1)
-
+    location_column = 'location_name'
+    address_column = 'address'
+    set_lat_long(location_column, address_column)
     print(df.head(10))
-
-    # export to csv
     df.to_csv(csv_file, index=False)
 
 
