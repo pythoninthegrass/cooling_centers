@@ -24,7 +24,7 @@ def parse_html(html_file_path):
     soup = BeautifulSoup(html_content, 'html.parser')
 
     data = []
-    headers = ["Facility", "Street Address", "Contact Number", "Days and Hours of Operation"]
+    headers = ["location_name", "address", "phone", "hours_of_operation"]
 
     tbody_elements = soup.find_all('tbody', class_='cc-table-body ng-scope')
 
@@ -53,4 +53,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
