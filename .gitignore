@@ -1,5 +1,6 @@
 # ETC
 .cache
+.studio
 *.bak
 *.db
 db/*
