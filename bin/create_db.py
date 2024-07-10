@@ -18,10 +18,13 @@ df = pd.read_csv(csv_file, header=0)
 
 conn = sqlite3.connect(db_file)
 
-df.to_sql('cooling_centers', conn, if_exists='append', index=False)
+state = file_name[:2]
+table = state
+
+df.to_sql(state, conn, if_exists='replace', index=False)
 
 print("DB created successfully! The first 5 rows are:\n")
-query = "SELECT * FROM cooling_centers LIMIT 5"
+query = f"SELECT * FROM {table} LIMIT 5"
 result = conn.execute(query)
 print('\n'.join(', '.join(str(cell) for cell in row) for row in result))
 
