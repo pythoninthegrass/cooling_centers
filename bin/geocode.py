@@ -14,8 +14,8 @@ csv_dir = base_dir / 'csv'
 filename = config('CSV_FILE', default='ny_cooling_centers_2024.csv')
 csv_file = csv_dir / filename
 
-# read existing csv
-df = pd.read_csv(csv_file, header=0)
+# initialize dataframe
+df = None
 
 geolocator = GoogleV3(api_key=google_api_key)
 geocode = RateLimiter(geolocator.geocode, min_delay_seconds=0.1)
@@ -55,18 +55,18 @@ def get_city_county(coordinates):
         return None
 
 
-def set_city_county(df):
+def set_city_county():
+    global df
     if 'latitude_longitude' in df.columns:
         df['city_county'] = df['latitude_longitude'].apply(lambda x: get_city_county(x))
-        return df
     else:
         print("No 'latitude_longitude' column found in dataframe.")
-        return df
 
 
 def main():
     location_column = 'location_name'
     address_column = 'address'
+    global df
     df = pd.read_csv(csv_file, header=0)
     if 'latitude_longitude' not in df.columns or df['latitude_longitude'].isnull().all():
         df = set_lat_long(location_column, address_column)
