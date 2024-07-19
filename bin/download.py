@@ -3,9 +3,10 @@
 import tempfile
 import httpx
 import rich.progress
+from decouple import config
 from pathlib import Path
 
-url = 'https://www.oge.com/wps/wcm/connect/5fff4221-6696-4166-9129-f431fc5a424f/OGE-Website+updates+2024-Cool+Zones-v2.pdf?MOD=AJPERES&CVID=p0Yt3kc'
+url = config('URL', default='https://www.oge.com/wps/wcm/connect/5fff4221-6696-4166-9129-f431fc5a424f/OGE-Website+updates+2024-Cool+Zones-v2.pdf?MOD=AJPERES&CVID=p0Yt3kc')
 dl_dir = Path('../static')
 
 headers = {
