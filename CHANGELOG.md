@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.5.0](https://github.com/pythoninthegrass/cooling_centers/compare/v1.4.0...v1.5.0) (2024-07-19)
+
+
+### Features
+
+* reverse geocode for cities/counties ([20b42b4](https://github.com/pythoninthegrass/cooling_centers/commit/20b42b4fa4bbe75d4e62bf6d730e8310a8a4f959))
+
+
+### Documentation
+
+* update readme ([88b865b](https://github.com/pythoninthegrass/cooling_centers/commit/88b865b7cd70c944b3f1b26e78a6c7dda0f0ef7f))
+
 ## [1.4.0](https://github.com/pythoninthegrass/cooling_centers/compare/v1.4.0...v1.4.0) (2024-07-05)
 
 
