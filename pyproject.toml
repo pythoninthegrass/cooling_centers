@@ -24,7 +24,7 @@ pandas = "^2.2.2"
 pdftotree = "^0.5.0"
 python-decouple = "^3.8"
 rich = "^13.7.1"
-strawberry-graphql = {extras = ["debug-server", "fastapi"], version = "^0.235.0"}
+strawberry-graphql = {extras = ["debug-server", "fastapi"], version = "^0.237.2"}
 tabula-py = {extras = ["jpype"], version = "^2.9.3"}
 uvicorn = "^0.30.1"
 
