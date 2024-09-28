@@ -16,7 +16,7 @@ beautifulsoup4 = "^4.12.3"
 fastapi = "^0.111.0"
 folium = "^0.17.0"
 geopy = {extras = ["aiohttp"], version = "^2.4.1"}
-hishel = {extras = ["sqlite"], version = "^0.0.29"}
+hishel = {extras = ["sqlite"], version = "^0.0.32"}
 httpx = "^0.27.0"
 lxml = "^5.2.2"
 numpy = "^2.0.0"
