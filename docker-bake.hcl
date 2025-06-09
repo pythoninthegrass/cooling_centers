@@ -27,8 +27,8 @@ target "build" {
   // Platform will be set from GitHub Actions
   // cache-from and cache-to will also be set from GitHub Actions
   args = {
-    PYTHON_VERSION = "3.12.10"
-    // Additional build args can be defined here
+    PYTHON_VERSION = "3.11.13"
+    SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL = "True"
   }
   // Output image will be pushed if push=true is set in GitHub Actions
 }
@@ -53,7 +53,6 @@ target "arm64" {
   cache-to = ["type=gha,mode=max,scope=linux/arm64"]
   // Optional arm64-specific args
   args = {
-    PYTHON_VERSION = "3.12.10"
     OPENBLAS_NUM_THREADS = "1"
     MKL_NUM_THREADS = "1"
     NUMEXPR_NUM_THREADS = "1"
