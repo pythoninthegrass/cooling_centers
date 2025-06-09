@@ -6,7 +6,7 @@ authors = [
     { name = "pythoninthegrass", email = "4097471+pythoninthegrass@users.noreply.github.com" },
     { name = "Alex Ayon", email = "jayonloza@gmail.com" },
 ]
-requires-python = ">=3.11,<3.13"
+requires-python = ">=3.11,<3.12"
 readme = "README.md"
 license = "MIT"
 dependencies = [
@@ -22,6 +22,7 @@ dependencies = [
     "pdftotree>=0.5.0,<0.6",
     "python-decouple~=3.8",
     "rich>=13.7.1,<14",
+    "scikit-learn>=1.3.0,<2",
     "strawberry-graphql[debug-server, fastapi]>=0.235.0,<0.236",
     "tabula-py[jpype]>=2.9.3,<3",
     "uvicorn>=0.30.1,<0.31",
