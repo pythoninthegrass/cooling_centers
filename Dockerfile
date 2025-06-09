@@ -28,6 +28,7 @@ COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 WORKDIR /src
 
 COPY pyproject.toml .
+COPY uv.lock .
 
 # optimize startup time, don't use hardlinks, set cache for buildkit mount,
 # set uv timeout
@@ -35,6 +36,9 @@ ENV UV_COMPILE_BYTECODE=1
 ENV UV_LINK_MODE=copy
 ENV UV_CACHE_DIR=/opt/uv-cache/
 ENV UV_HTTP_TIMEOUT=90
+
+# ! Work around transitive dependency scikit-learn build error
+ARG SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL=True
 
 RUN --mount=type=cache,target=/opt/uv-cache,sharing=locked \
     uv venv $UV_PROJECT_ENVIRONMENT \
@@ -71,7 +75,7 @@ ENV PATH=$VENV/bin:$HOME/.local/bin:$PATH
 COPY --from=builder \
     --chown=$USER_NAME:$USER_NAME "$VENV" "$VENV"
 
-COPY --chown=$USER_NAME:$USER_NAME ./src/ ${WORKDIR}/
+COPY --chown=$USER_NAME:$USER_NAME . ${WORKDIR}/
 
 # standardise on locale, don't generate .pyc, enable tracebacks on seg faults
 ENV LANG C.UTF-8
