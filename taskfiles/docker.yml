@@ -10,10 +10,10 @@ vars:
   COMPOSE_REMOVE_ORPHANS: '{{.COMPOSE_REMOVE_ORPHANS | default "true"}}'
   DOCKERFILE: '{{.DOCKERFILE | default (printf "%s/Dockerfile" .ROOT_DIR)}}'
   ARCH: '{{.ARCH | default "linux/amd64"}}'
-  REGISTRY: "{{.REGISTRY | default "ghcr.io"}}"
-  USER_NAME: "{{.USER_NAME | default "pythoninthegrass"}}"
-  SERVICE: "{{.SERVICE | default "cooling-centers"}}"
-  VERSION: "{{.VERSION | default "latest"}}"
+  REGISTRY: '{{.REGISTRY | default "ghcr.io"}}'
+  USER_NAME: '{{.USER_NAME | default "pythoninthegrass"}}'
+  SERVICE: '{{.SERVICE | default "cooling-centers"}}'
+  VERSION: '{{.VERSION | default "latest"}}'
 
 tasks:
   debug:
