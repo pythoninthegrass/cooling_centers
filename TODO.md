@@ -1,11 +1,10 @@
 # TODO
 
 * [Issues](https://github.com/pythoninthegrass/cooling_centers/issues)
-* ~~Transform [NY state CSV](csv/ny_cooling_centers_2024.csv) to match [OK state CSV](csv/ok_cooling_centers_2024.csv)~~
 * Load all CSVs into a database
-  * First `sqlite`, then `edgedb`
+  * First `sqlite`, then `neon`
 * Embed as an [iframe](https://python-visualization.github.io/folium/latest/advanced_guide/flask.html)
-  * Sub FastAPI for Flask
+  * Sub FastAPI for ~~Flask~~ Plain
 * Transform
   * Fix NaN values
     * Missing cells (e.g., `city_county`, `latitude_longitude`)
