@@ -1,7 +1,7 @@
 services:
   devbox:
-    container_name: cooling-centers-dev
-    hostname: cooling-centers-dev
+    container_name: cooling-centers
+    hostname: cooling-centers
     platform: linux/arm64/v8  # linux/amd64 / linux/arm64/v8
     tty: true                 # false for `entrypoint` in Dockerfile
     stdin_open: true          # false for `entrypoint` in Dockerfile
