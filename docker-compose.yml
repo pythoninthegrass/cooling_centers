@@ -1,7 +1,7 @@
 services:
   devbox:
-    container_name: mydevbox
-    hostname: devbox
+    container_name: cooling-centers-dev
+    hostname: cooling-centers-dev
     platform: linux/arm64/v8  # linux/amd64 / linux/arm64/v8
     tty: true                 # false for `entrypoint` in Dockerfile
     stdin_open: true          # false for `entrypoint` in Dockerfile
@@ -13,8 +13,8 @@ services:
     # environment:
     networks:
       - devbox
-    # ports:
-    #   - "8000:8000/tcp"
+    ports:
+      - "8000:8000/tcp"
     volumes:
       - ./:${WORKDIR:-/code}
     working_dir: ${WORKDIR:-/code}
